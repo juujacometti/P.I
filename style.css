@@ -1,0 +1,41 @@
+*{
+width: 100%;
+margin: 0;
+overflow-x: hidden;
+}
+
+header {
+    border: 1px solid brown;    
+    padding: 15px
+    
+}
+
+img{
+    width: auto;
+}
+
+nav #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+}
+.produto_favorito{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+#favoritos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
