@@ -1,41 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
 *{
-width: 100%;
 margin: 0;
 overflow-x: hidden;
 }
 
 header {
-    border: 1px solid brown;    
-    padding: 15px
-    
-}
-
-img{
-    width: auto;
-}
-
-nav #logo{
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
+    padding: 35px;
 }
 
-#logo{
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#icon_menu{
+    position: absolute;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px
+}
+
+#icon_buscar{
+    position: absolute;
+    right: 1px;
+}
+
+nav{
     border: 1px solid red;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: fit-content;
-
+    justify-content: space-evenly;
 }
-.produto_favorito{
-    display: inline-block;
+
+nav h2{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.304);
+}
+
+#capa{
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
 }
 
 #favoritos{
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#favoritos_titulo{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px ;
+    font-size: 40px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.produto_favorito{
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.produto_favorito_texto :hover{
+    transform: scale(1.02);
+}
+
+.produto_favorito_texto{
+    text-align: center;
+}
+
+.produto_favorito_texto p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.preco_produto :hover{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
 }
