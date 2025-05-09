@@ -56,20 +56,23 @@ nav h2{
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 #favoritos{
-    border: 1px solid blue;
+    background-color: rgb(249, 243, 236);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
 #favoritos_titulo{
+    background-color: rgb(249, 243, 236);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px ;
     font-size: 40px;
     font-family: "Belleza", sans-serif;
@@ -80,6 +83,7 @@ nav h2{
 .produto_favorito{
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
     font-family: "Zain", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -87,8 +91,8 @@ nav h2{
     cursor: pointer;
 }
 
-.produto_favorito_texto :hover{
-    transform: scale(1.02);
+.produto_favorito:hover{
+    transform: scale(1.02)
 }
 
 .produto_favorito_texto{
@@ -100,9 +104,4 @@ nav h2{
     font-size: 15px;
 }
 
-.preco_produto :hover{
-    font-family: "Zain", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 50px;
-}
+
