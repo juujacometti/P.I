@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+margin: 0;
+overflow-x: hidden;
+}
+
+/* Página inicial */
+
+header {
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#icon_menu{
+    position: absolute;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px
+}
+
+#icon_buscar{
+    position: absolute;
+    right: 1px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8px 0px 5px 0px;
+}
+
+nav h2{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.167);
+}
+
+#capa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#favoritos{
+    background: linear-gradient(to right, #0E53B5, #131662);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#favoritos_titulo{
+    background: linear-gradient(to right, #0E53B5, #131662);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px ;
+    font-size: 40px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.produto_favorito{
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.produto_favorito:hover{
+    transform: scale(1.02)
+}
+
+.produto_favorito_texto{
+    text-align: center;
+}
+
+.produto_favorito_texto p{
+    text-align: center;
+    font-size: 15px;
+}
+#conheca_produtos_titulo{
+    background-color: rgb(253, 238, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 10px 0px;
+    font-size: 35px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#conheca_produtos{
+    background-color: rgb(253, 238, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+    overflow-y: hidden;
+}
+
+#conheca_produtos h3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#conheca_produtos_categorias{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 1rem; 
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#conheca_produtos_categorias:hover{
+    transform: scale(1.02)
+}
+
+.categorias_produtos h2{
+
+}
+
+footer{
+    font-family: "Zain", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#formas_pagamento{
+    border: 1px solid red;
+}
+
+#formas_pagamento h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#formas_pagamento ul{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#redes_sociais h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Geral */
