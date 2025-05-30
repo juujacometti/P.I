@@ -6,4 +6,172 @@ margin: 0;
 overflow-x: hidden;
 }
 
-/* Página incial */
+/* Página inicial */
+
+header {
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px
+}
+
+#navbar{
+}
+
+#capa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#favoritos{
+    background: linear-gradient(to right, #0E53B5, #131662);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+#favoritos_titulo{
+    background: linear-gradient(to right, #0E53B5, #131662);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px ;
+    font-size: 50px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.produto_favorito{
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.produto_favorito:hover{
+    transform: scale(1.02)
+}
+
+.produto_favorito_texto{
+    text-align: center;
+}
+
+.produto_favorito_texto p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#categorias_produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+
+#categorias_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    padding: 18px;
+    padding-top: 80px;
+}
+
+.categoria_nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: #131662;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#beneficios_cliente {
+    background: linear-gradient(to right, #FFFFFF, #DDDDDD);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 130px;
+    padding: 60px;
+    margin-top: 120px;
+}
+
+.beneficio {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    width: 250px;
+    color: #131662;
+}
+
+.beneficio img {
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficio h3 {
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.beneficio p{
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(to right, #0E53B5, #131662);
+    color: white;
+    margin-top: 70px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
