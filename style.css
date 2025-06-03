@@ -31,6 +31,20 @@ figure{
     padding: 5px
 }
 
+#busca {
+    position: absolute;
+    right: 7%;
+}
+
+#busca:hover, #perfil:hover{
+    transform: scale(1.08);
+}
+
+#perfil {
+    position: absolute;
+    right: 4%;
+}
+
 nav a{
     text-decoration: none;
     color: #131662;
@@ -255,3 +269,8 @@ footer ul{
     font-style: normal;
     font-size: 16px;
 }
+
+
+/* Tela de busca */
+
+
