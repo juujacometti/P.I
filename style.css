@@ -3,6 +3,7 @@
 
 *{
 margin: 0;
+padding: 0;
 overflow-x: hidden;
 }
 
@@ -61,7 +62,6 @@ nav ul{
     justify-content: center;
     gap: 200px;
     margin-top: 18px;
-    
 }
 
 #capa{
@@ -206,11 +206,12 @@ footer {
     align-items: flex-start;
     gap: 100px;
     margin-top: 70px;
-    padding: 30px;
+    padding-top: 30px;
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -242,4 +243,15 @@ footer ul{
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+
+#direitos{
+    flex-basis: 100%;
+    background-color: #0F1249;
+    padding: 8px;
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
 }
