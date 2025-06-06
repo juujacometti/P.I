@@ -10,315 +10,367 @@ overflow-x: hidden;
 /* Página inicial */
 
 #cabecalho {
-    border: 1px solid rgb(213, 213, 213);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 60px;
+  border: 1px solid rgb(213, 213, 213);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 60px;
 }
 
 figure{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px
 }
 
 #busca {
-    position: absolute;
-    right: 7%;
+  position: absolute;
+  left: 4%;
 }
 
-#busca:hover, #perfil:hover{
-    transform: scale(1.08);
+#busca:hover, #perfil:hover, #carrinho:hover{
+  transform: scale(1.08);
 }
 
 #perfil {
+  position: absolute;
+  right: 7%;
+}
+
+#carrinho{
     position: absolute;
     right: 4%;
 }
 
 nav a{
-    text-decoration: none;
-    color: #131662;
-    font-family: "Belleza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    position: relative;
+  text-decoration: none;
+  color: #131662;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  position: relative;
 }
 
 nav a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: black;
-    transition: 0.3s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: 0.3s ease;
 }
 
 nav a:hover::after{
-    width: 100%;
+  width: 100%;
 }
 
 nav ul{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 18px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 18px;
 }
 
 #capa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 #favoritos{
-    background: linear-gradient(to right, #0E53B5, #131662);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 50px;
-    margin-bottom: 40px;
+  background: linear-gradient(to right, #0E53B5, #131662);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin-bottom: 40px;
 }
 
 #favoritos_titulo{
-    background: linear-gradient(to right, #0E53B5, #131662);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 10px ;
-    font-size: 50px;
-    font-family: "Belleza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  background: linear-gradient(to right, #0E53B5, #131662);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px ;
+  font-size: 50px;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .produto_favorito{
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    font-family: "Zain", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-    cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .produto_favorito:hover{
-    transform: scale(1.02)
+  transform: scale(1.02)
 }
 
 .produto_favorito_texto{
-    text-align: center;
+  text-align: center;
 }
 
 .produto_favorito_texto p{
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #categorias_produtos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
 }
 
 #categorias_titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: "Belleza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #131662;
-    padding: 18px;
-    padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #131662;
+  padding: 18px;
+  padding-top: 80px;
 }
 
 .categoria_nome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Zain", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 28px;
-    color: #131662;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Zain", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  color: #131662;
 }
 
 .categoria:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 #beneficios_cliente {
-    background: linear-gradient(to right, #FFFFFF, #DDDDDD);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 130px;
-    padding: 60px;
-    margin-top: 120px;
+  background: linear-gradient(to right, #FFFFFF, #DDDDDD);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 130px;
+  padding: 60px;
+  margin-top: 120px;
 }
 
 .beneficio {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    white-space: normal;
-    width: 250px;
-    color: #131662;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  width: 250px;
+  color: #131662;
 }
 
 .beneficio img {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .beneficio h3 {
-    font-family: "Zain", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 25px;
-    cursor: pointer;
-    padding-top: 20px;
+  font-family: "Zain", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  cursor: pointer;
+  padding-top: 20px;
 }
 
 .beneficio p{
-    font-family: "Zain", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    cursor: pointer;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 footer {
-    background: linear-gradient(to right, #0E53B5, #131662);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 100px;
-    margin-top: 70px;
-    padding-top: 30px;
-    font-family: "Zain", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    flex-wrap: wrap;
+  background: linear-gradient(to right, #0E53B5, #131662);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  margin-top: 70px;
+  padding-top: 30px;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  flex-wrap: wrap;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 footer ul{
-    font-size: 22px;
+  font-size: 22px;
 }
 
 #formas_pagamento img{
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #sobre_nos a{
-    text-decoration: none;
-    color: #FFFFFF;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 #sobre_nos a:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-    color: rgb(195, 220, 255);
-    text-decoration: underline;
+  transform: scale(1.05);
+  cursor: pointer;
+  color: rgb(195, 220, 255);
+  text-decoration: underline;
 }
 
 #redes_sociais ul{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 #direitos{
-    flex-basis: 100%;
-    background-color: #0F1249;
-    padding: 8px;
-    text-align: center;
-    font-family: "Belleza", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 16px;
+  flex-basis: 100%;
+  background-color: #0F1249;
+  padding: 8px;
+  text-align: center;
+  font-family: "Belleza", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
 }
 
 
 /* Tela de busca */
+
+#buscando {
+  position: absolute;
+  left: 4%;
+}
+
 h1, #item_buscado, #quantidade_produtos_encontrados {
-    font-family: "Belleza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #131662;
-    margin-left: 40px;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #131662;
+  margin-left: 40px;
 }
 
 h1 {
-    font-size: 45px;
-    margin-top: 45px;
+  font-size: 45px;
+  margin-top: 45px;
 }
 
 #item_buscado {
-    font-size: 30px;
-    margin-top: 15px;
+  font-size: 30px;
+  margin-top: 15px;
 }
 
 #quantidade_produtos_encontrados{
-    font-size: 25px;
-    margin-top: 15px;
+  font-size: 25px;
+  margin-top: 15px;
 }
 
 #todos_resultados_busca{
-    display: grid; 
-    gap: 100px;
-    max-width: 2000px; 
-    grid-template-columns: repeat(4, 320px);
-    margin: 70px auto 0 auto;
-    justify-content: center; 
+  display: grid; 
+  gap: 100px;
+  max-width: 2000px; 
+  grid-template-columns: repeat(4, 320px);
+  margin: 70px auto 0 auto;
+  justify-content: center; 
 }
 
 .resultados_busca{
-    border: 1px solid #e4eefc;
-    border-radius: 10px;
-    background-color: #EFF2F6;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+  border: 1px solid #e4eefc;
+  border-radius: 10px;
+  background-color: #EFF2F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
 
+.resultados_busca a{
+  text-decoration: none;
+  color: #131662;
+}
+
+.resultados_busca:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .resultados_busca_texto{
-    font-family: "Zain", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #131662;
 }
+
+.resultados_busca_texto:hover{
+  font-weight: 400;
+  font-style: bold;
+  font-size: 20px;
+}
+
+#botao_carrinho {
+  color: #131662;
+  border: none;
+  padding: 8px;
+  margin-top: 8px;
+  font-family: "Zain", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+  gap: 5px;
+}
+
+#botao_carrinho:hover{
+  background-color: #131662;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
 
 
