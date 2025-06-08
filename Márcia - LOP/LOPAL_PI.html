@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status das Esteiras - Monitoramento de Estoque</title>
+    <link rel="stylesheet" href="stylePy.css">
+</head>
+<body>
+    <h1>Status das Esteiras - Monitoramento de Estoque</h1>
+  <section id="tabela">
+    <table border="2px" class="dataframe" align="center", width="500">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Esteira 1</th>
+        <th>Esteira 2</th>
+        <th>Esteira 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2024/11/26</td>
+        <td>06:35:02</td>
+        <td class="estoqueMedio">2</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueCheio">3</td>
+      </tr>
+      <tr>
+        <td>2024/11/25</td>
+        <td>06:34:53</td>
+        <td class="estoqueMedio">2</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueMedio">2</td>
+      </tr>
+      <tr>
+        <td>2024/11/24</td>
+        <td>06:34:37</td>
+        <td class="estoqueVazio">0</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueCheio">3</td>
+      </tr>
+      <tr>
+        <td>2024/11/23</td>
+        <td>06:34:21</td>
+        <td class="estoqueVazio">0</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueVazio">0</td>
+      </tr>
+      <tr>
+        <td>2024/11/22</td>
+        <td>06:33:57</td>
+        <td class="estoqueVazio">0</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+      </tr>
+      <tr>
+        <td>2024/11/21</td>
+        <td>06:33:48</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+      </tr>
+      <tr>
+        <td>2024/11/20</td>
+        <td>06:33:39</td>
+        <td class="estoqueVazio">0</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueMedio">2</td>
+      </tr>
+      <tr>
+        <td>2024/11/19</td>
+        <td>06:33:24</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueMedio">2</td>
+      </tr>
+      <tr>
+        <td>2024/11/18</td>
+        <td>06:33:12</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+      </tr>
+      <tr>
+        <td>2024/11/17</td>
+        <td>06:33:00</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueMedio">2</td>
+      </tr>
+      <tr>
+        <td>2024/11/16</td>
+        <td>06:32:48</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueBaixo">1</td>
+        <td class="estoqueMedio">2</td>
+      </tr>
+  </table>
+  </section>  
+
+
+    <section id="legenda">
+      <h2>Legenda:</h2>
+      <div id="vazio">
+        <img src="images/vermelho.png" alt="Bola vermelha" height="20px">
+        <p>Estoque vazio</p>
+      </div>
+      <div id="baixo">
+         <img src="images/vermelhinho.png" alt="Bola vermelho claro" height="20px">
+        <p>Estoque  baixo, nível crítico</p>
+      </div>
+      <div id="medio">
+        <img src="images/amarelo.png" alt="Bola amarela" height="20px">
+        <p >Estoque médio, planejar</p>
+      </div>
+      <div id="cheio">
+        <img src="images/verde.png" alt="Bola verde" height="20px">
+        <p>Estoque cheio, não há necessidade de planejamento</p>
+      </div>
+    </section>
+
+  </body>
+</table>
+</body>
+</html>

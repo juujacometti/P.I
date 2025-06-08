@@ -1,0 +1,43 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+#tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.estoqueCheio{
+    background-color: #60de60;
+}
+
+.estoqueMedio{
+    background-color: #ffff88;
+}
+
+.estoqueBaixo {
+    background-color: #ff6868;
+}
+
+.estoqueVazio {
+    background-color: #ff0000;
+}
+
+#legenda{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#vazio, #baixo, #medio, #cheio {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
