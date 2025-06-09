@@ -46,8 +46,8 @@ figure{
 }
 
 #carrinho{
-    position: absolute;
-    right: 4%;
+  position: absolute;
+  right: 4%;
 }
 
 nav a{
@@ -378,26 +378,27 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 400px;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 
 #produtoEspecifico {
-  border: 1px solid pink;
   margin: 30px 0px 0px 80px;
 }
 
 #descricaoProdutoEspecifico {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
+  margin-top: 50px;
 }
 
 #tituloProdutoEspecifico {
   font-family: "Belleza", sans-serif;
   font-weight: 400;
   font-style: bold;
-  font-size: 35px;
+  font-size: 45px;
   color: #131662;
-  margin: 0;
+  margin-top: 60px;
   padding-bottom: 15px;
 }
 
@@ -473,7 +474,6 @@ hr {
   margin-left: 60px;
   display: block;
   flex-direction: column;
-  align-items: center;
 }
 
 #quantidadeProduto {
@@ -483,14 +483,12 @@ hr {
   border: 2px solid #131662;
   font-size: 20px;
   display: block;
-  align-items: center;
   flex-direction: column;
 } 
 
-
-
 #adicionarCarrinho {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 10px;
   font-family: "Belleza", sans-serif;
   font-weight: 400;
@@ -499,7 +497,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 130px;
   background-color: #181b76;
   color: #FFFFFF;
   border-radius: 10px;
@@ -510,5 +507,93 @@ hr {
   background-color: #0F1249;
 }
 
+#detalhesProduto{
+  margin-top: 15px;
+}
+
+#detalhesProduto h2{
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: #131662  ;
+}
+
+#detalhesProduto p, li {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #131662;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#tituloComentario {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #131662;
+  font-size: 40px;
+  padding-left: 25px;
+  padding-top: 40px;
+}
+
+.separacaoComentario {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #131662;
+  font-size: 25px;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+#blocoComentario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px;
+}
+
+.comentario {
+  display: flex;
+}
+
+#avaliacoesProduto {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  background-color: #EFF2F6;
+  width: 100em;
+  display: flex;
+  padding: 15px;
+}
+
+.fotoPerfilComentario {
+  border-radius: 50%;
+}
+
+.user, .conteudoComentario {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  height: fit-content;
+  margin-left: 10px;
+
+}
+
+.user {
+  font-size: 30px;
+  font-style: bold;
+  font-weight: 500;
+  color: #131662;
+}
+
+.fraseComentario {
+  margin-left: 10px;
+  color: #131662;
+}
 
 
