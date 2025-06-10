@@ -675,21 +675,13 @@ ul {
   color: #131662;
 }
 
-.lixeira {
-  position: absolute;
-  left: 65%;
-  top: 32%;
-}
-
-.lixeira2 {
-  position: absolute;
-  left: 65%;
-  top: 65%;
-}
-
 .lixeira:hover, .lixeira2:hover {
   transform: scale(1.08);
   cursor: pointer;
+}
+
+.lixeira {
+  padding-top: 10px;
 }
 
 #resumoProdutosCarrinho {
@@ -707,6 +699,7 @@ ul {
   margin-bottom: 15px;
   margin-left: 15px;
   margin-top: 10px;
+  color: #131662;
 }
 
 #subtotal, #calculoEntrega, #total {
@@ -729,6 +722,20 @@ ul {
   color: #0E53B5;
   font-weight: 600;
   font-style: bold;
+  background-color: #EFF2F6;
 }
 
+#botaoFinalizarCompra, #botaoContinuarComprando {
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+
+#alinharBotoesCarrinho {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 
