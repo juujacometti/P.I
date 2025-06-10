@@ -647,3 +647,88 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+
+/* Tela de carrinho */
+
+#carrinhoCompleto {
+  display: flex;
+}
+
+.produtoCarrinho {
+  border: 1px solid #e4eefc;
+  background-color: #EFF2F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 35px;
+  margin-top: 25px;
+  width: 80em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.textoProdutoCarrinho {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #131662;
+}
+
+.lixeira {
+  position: absolute;
+  left: 65%;
+  top: 32%;
+}
+
+.lixeira2 {
+  position: absolute;
+  left: 65%;
+  top: 65%;
+}
+
+.lixeira:hover, .lixeira2:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+#resumoProdutosCarrinho {
+  border: 1px solid #c4d7f0;
+  border-radius: 10px;
+  width: 30em;
+  margin-left: 60px;
+}
+
+#resumoCarrinhoTitulo {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 35px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#subtotal, #calculoEntrega, #total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #131662;
+  padding: 15px;
+}
+
+.categoriaResumoCompra {
+  font-weight: 600;
+  font-style: bold;
+}
+
+#precoTotal {
+  color: #0E53B5;
+  font-weight: 600;
+  font-style: bold;
+}
+
+
