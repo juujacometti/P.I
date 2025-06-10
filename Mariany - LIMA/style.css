@@ -18,7 +18,7 @@ overflow-x: hidden;
   padding: 60px;
 }
 
-figure{
+#figureCabecalho {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -386,11 +386,6 @@ h1 {
   margin: 30px 0px 0px 80px;
 }
 
-#descricaoProdutoEspecifico {
-  /* border: 1px solid red; */
-  display: block;
-  margin-top: 50px;
-}
 
 #tituloProdutoEspecifico {
   font-family: "Belleza", sans-serif;
@@ -402,12 +397,19 @@ h1 {
   padding-bottom: 15px;
 }
 
+#breveDescricaoProdutoEspecifico{
+  padding-left: 42px;
+}
+
 #descricaoProdutoEspecifico {
   font-family: "Zain", sans-serif;
   font-weight: 300;
   font-size: 30px;
   color: #131662;
+  display: block;
+  margin-top: 50px;
 }
+
 
 #precoProdutoEspecifico {
   font-weight: 500;
@@ -454,16 +456,10 @@ hr {
   gap: 10px;
 }
 
-#materialProducao {
-  display: block;
+#alterarQuantidade {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#alterarQuantidade {
-  display: block;
-  flex-direction: column;
-  align-items: center;
 }
 
 #quantidade {
@@ -472,8 +468,6 @@ hr {
   font-style: normal;
   font-size: 25px;
   margin-left: 60px;
-  display: block;
-  flex-direction: column;
 }
 
 #quantidadeProduto {
@@ -486,6 +480,13 @@ hr {
   flex-direction: column;
 } 
 
+#botaoAdicionarCarrinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+
 #adicionarCarrinho {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -494,9 +495,6 @@ hr {
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #181b76;
   color: #FFFFFF;
   border-radius: 10px;
@@ -519,7 +517,7 @@ hr {
   color: #131662  ;
 }
 
-#detalhesProduto p, li {
+#detalhesProduto p {
   font-family: "Zain", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -571,17 +569,12 @@ ul {
   padding: 15px;
 }
 
-.fotoPerfilComentario {
-  border-radius: 50%;
-}
-
 .user, .conteudoComentario {
   font-family: "Zain", sans-serif;
   font-weight: 400;
   font-size: 26px;
   height: fit-content;
   margin-left: 10px;
-
 }
 
 .user {
@@ -596,4 +589,61 @@ ul {
   color: #131662;
 }
 
+.estrelasComentário {
+  margin-left: 10px;
+}
 
+#tituloNovoComentario {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #131662;
+  font-size: 30px;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+#novoComentario {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  background-color: #EFF2F6;
+  width: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #131662;
+}
+
+::placeholder {
+  color: #131662bc;
+}
+
+#enviarNovoComentario {
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #FFFFFF;
+  font-size: 20px;
+  background-color: #131662;
+}
+
+#enviarNovoComentario:hover{
+  background-color: #0F1249;
+  cursor: pointer;
+}
+
+#blocoNovoComentario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
