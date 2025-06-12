@@ -318,7 +318,7 @@ h1 {
 .resultadosBusca{
   border: 1px solid #e4eefc;
   border-radius: 10px;
-  background-color: #EFF2F6;
+  background-color:   ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   margin-top: 25px;
@@ -354,6 +354,7 @@ h1 {
 #botaoCarrinho {
   color: #131662;
   border: none;
+  border-radius: 10px;
   padding: 8px;
   margin-top: 8px;
   font-family: "Zain", sans-serif;
@@ -362,6 +363,7 @@ h1 {
   font-size: 25px;
   text-align: center;
   gap: 5px;
+  background-color: #d6e4f8;
 }
 
 #botaoCarrinho:hover {
@@ -563,7 +565,7 @@ ul {
 #avaliacoesProduto {
   border: 1px solid #e1e4e8;
   border-radius: 10px;
-  background-color: #EFF2F6;
+  background-color: #EFF2F6;    /* Alterar cor, contraste não suficiente*/
   width: 100em;
   display: flex;
   padding: 15px;
@@ -606,7 +608,7 @@ ul {
 #novoComentario {
   border: 1px solid #e1e4e8;
   border-radius: 10px;
-  background-color: #EFF2F6;
+  background-color: #EFF2F6;  /* Alterar cor, contraste não suficiente*/
   width: 50em;
   display: flex;
   align-items: center;
@@ -659,7 +661,7 @@ ul {
 
 .produtoCarrinho {
   border: 1px solid #e4eefc;
-  background-color: #EFF2F6;
+  background-color: #EFF2F6;  /* Alterar cor, contraste não suficiente*/  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-left: 35px;
@@ -752,7 +754,7 @@ ul {
 }
 
 #botaoContinuarComprando {
-  background-color: #EFF2F6;
+  background-color: #EFF2F6; 
   color: #131662;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -766,3 +768,12 @@ ul {
   gap: 15px;
 }
 
+
+/* Categoria - Prata 925 */
+
+#bannerPrata925 {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
