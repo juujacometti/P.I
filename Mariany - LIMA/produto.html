@@ -1,168 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Zirco | Início</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
-    
-</head>
-<body>
-    <header>
-        <section id="cabecalho">
-            <figure id="figureCabecalho">
-                <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo Zirco" height=70px/></a>
-                <a id="busca" href="busca.html"><img src="images/busca.png" alt="Ícone de busca." height=35px/></a>
-                <a id="perfil" href=""><img src="images/perfil.png" alt="Ícone de perfil do usuário." height=35px/></a>
-                <a id="carrinho" href="carrinho.html"><img src="images/carrinho.png" alt="Ícone de carrinho." height="35px"></a>
-            </figure>
-        </section>
-        
-        <nav id="navbar">
-            <ul>
-                <li><a href="prata925.html">Prata 925</a></li>
-                <li><a href="ouro18k.html">Ouro 18k</a></li>
-                <li><a href="banhados.html">Banhados a ouro</a></li>
-                <li><a href="todosProdutos.html">Todos os produtos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zirco | Página do produto</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <section id="cabecalho">
+                <figure id="figureCabecalho">
+                    <a id="logo" href="index.html"
+                        ><img
+                            src="images/logo.png"
+                            alt="Logo Zirco"
+                            height="70px"
+                    /></a>
+                    <a id="busca" href="busca.html"
+                        ><img
+                            src="images/busca.png"
+                            alt="Ícone de busca."
+                            height="35px"
+                    /></a>
+                    <a id="perfil" href=""
+                        ><img
+                            src="images/perfil.png"
+                            alt="Ícone de perfil do usuário."
+                            height="35px"
+                    /></a>
+                    <a id="carrinho" href="carrinho.html"
+                        ><img
+                            src="images/carrinho.png"
+                            alt="Ícone de carrinho."
+                            height="35px"
+                    /></a>
+                </figure>
+            </section>
 
-    <main>
-        <section id="produto">
-            <img id="produtoEspecifico" src="images/Produtos/pulseira_riviera.png" alt="Pulseira de ouro branco 18k com diamante de laboratório" height="500px"/>
-            <article id="descricaoProdutoEspecifico">
-                <h1 id="tituloProdutoEspecifico">Pulseira Riviera</h1>
-                <p id="breveDescricaoProdutoEspecifico">Pulseira de ouro branco 18k com diamante de laboratório</p>
-                <p id="precoProdutoEspecifico">R$ 12.975,00</p>
-                <p id="parcelamentoProdutoEspecifico">10x sem juros de R$ 1.297,50</p>
-                <article id="divisaoMaterialQuantidade">
-                    <section id="materialProducao">
-                        <h2 id="material">Material</h2>
-                        <img src="images/Material/prata.png" alt="Material Prata 925" height="40px"/>
-                        <img id="ouro" src="images/Material/ouro.png" alt="Material Ouro 18k" height="40px"/>  
-                    </section> 
-                    <section id="alterarQuantidade">
-                        <label id="quantidade" for="quantidade">Quantidade</label>
-                        <input id="quantidadeProduto" type="number" min="1" max="10"/>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="prata925.html">Prata 925</a></li>
+                    <li><a href="ouro18k.html">Ouro 18k</a></li>
+                    <li><a href="banhados.html">Banhados a ouro</a></li>
+                    <li><a href="todosProdutos.html">Todos os produtos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="produto">
+                <img
+                    id="produtoEspecifico"
+                    src="images/Produtos/pulseira_riviera.png"
+                    alt="Pulseira de ouro branco 18k com diamante de laboratório"
+                    height="500px"
+                />
+                <article id="descricaoProdutoEspecifico">
+                    <h1 id="tituloProdutoEspecifico">Pulseira Riviera</h1>
+                    <p id="breveDescricaoProdutoEspecifico">
+                        Pulseira de ouro branco 18k com diamante de laboratório
+                    </p>
+                    <p id="precoProdutoEspecifico">R$ 12.975,00</p>
+                    <p id="parcelamentoProdutoEspecifico">
+                        10x sem juros de R$ 1.297,50
+                    </p>
+                    <article id="divisaoMaterialQuantidade">
+                        <section id="materialProducao">
+                            <h2 id="material">Material</h2>
+                            <img
+                                src="images/Material/prata.png"
+                                alt="Material Prata 925"
+                                height="40px"
+                            />
+                            <img
+                                id="ouro"
+                                src="images/Material/ouro.png"
+                                alt="Material Ouro 18k"
+                                height="40px"
+                            />
+                        </section>
+                        <section id="alterarQuantidade">
+                            <label id="quantidade" for="quantidade"
+                                >Quantidade</label
+                            >
+                            <input
+                                id="quantidadeProduto"
+                                type="number"
+                                min="1"
+                                max="10"
+                            />
+                        </section>
+                    </article>
+                    <section id="botaoAdicionarCarrinho">
+                        <button id="adicionarCarrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </section>
+                    <hr />
+                    <section id="detalhesProduto">
+                        <h2>Detalhes do produto</h2>
+                        <p>
+                            Pulseira Riviera em Ouro Branco 18k com Diamante de
+                            Laboratório 16,5 ct.
+                        </p>
+                        <ul>
+                            <li>- Comprimento aproximado: 17cm</li>
+                            <li>- Material: Ouro branco 18k</li>
+                            <li>- Pedras: Diamante feito em laboratório</li>
+                            <li>- Observação : Todas as medidas são aproximadas e podem variar de acordo com a produção.</li>
+                        </ul>
                     </section>
                 </article>
-                <section id="botaoAdicionarCarrinho">
-                    <button id="adicionarCarrinho">ADICIONAR AO CARRINHO</button>
-                </section>
-                <hr>
-                <section id="detalhesProduto">
-                    <h2>Detalhes do produto</h2>
-                    <p>Pulseira Riviera em Ouro Branco 18k com Diamante de Laboratório 16,5 ct.</p>
-                <ul>
-                    <li>- Comprimento aproximado: 17cm</li>
-                    <li>- Material: Ouro branco 18k</li>
-                    <li>- Pedras: Diamante feito em laboratório</li>
-                    <li>- Observação : Todas as medidas são aproximadas e podem variar de acordo com a produção.</li>
-                </ul>
-                </section>
-            </article>
-        </section>
-        <h2 id="tituloComentario">Comentários e avaliações</h2>
-        <p class="separacaoComentario">Avaliações (20)</p>
-        <p class="separacaoComentario" >Comentários (3)</p>
-        <article id="blocoComentario">
-            <article id="avaliacoesProduto">
-                <section class="comentario">
-                    <figure class="fotoPerfilComentario">
-                        <img src="images/Comentários/user1.png" alt="Foto de perfil. Mulher sorrindo." height="80px"/>
-                    </figure>
-                    <article class="conteudoComentario">
-                        <p class="user">@mariayasmin</p>
-                        <figure class="estrelasComentário">
-                            <img src="images/Comentários/5star.png" alt="Avaliado em 5 estrelas" height="20px"/>
-                        </figure>
-                        <p class="fraseComentario">Muito linda! Peça de ótima qualidade.</p>
-                    </article>            
-                </section>
-            </article>
-        </article>
-        <article id="blocoComentario">
-            <article id="avaliacoesProduto">
-                <section class="comentario">
-                    <figure class="fotoPerfilComentario">
-                        <img src="images/Comentários/user2.png" alt="Foto de perfil. Mulher sorrindo." height="80px">
-                    </figure>
-                    <article class="conteudoComentario">
-                        <p class="user">@123carol</p>
-                        <figure class="estrelasComentário">
-                            <img src="images/Comentários/4star.png" alt="Avaliado em 5 estrelas" height="20px"/>
-                        </figure>
-                        <p class="fraseComentario">Jóia linda.</p>
-                    </article>            
-                </section>
-            </article>
-        </article>
-        <article id="blocoComentario">
-            <article id="avaliacoesProduto">
-                <section class="comentario">
-                    <figure class="fotoPerfilComentario">
-                        <img src="images/Comentários/user3.png" alt="Foto de perfil. Mulher sorrindo." height="80px">
-                    </figure>
-                    <article class="conteudoComentario">
-                        <p class="user">@danielamarques</p>
-                        <figure class="estrelasComentário">
-                            <img src="images/Comentários/5star.png" alt="Avaliado em 5 estrelas" height="20px"/>
-                        </figure>
-                        <p class="fraseComentario">Amei!</p>
-                    </article>            
-                </section>
-            </article>
-        </article>
-        <article>
-            <h3 id="tituloNovoComentario">Adicionar novo comentário</h3>
-            <section id="blocoNovoComentario">
-                <input id="novoComentario" type="text" placeholder="Escreva seu comentário aqui."/>
-                <button id="enviarNovoComentario">ENVIAR</button>
             </section>
-        </article>
+            <h2 id="tituloComentario">Comentários e avaliações</h2>
+            <p class="separacaoComentario">Avaliações (20)</p>
+            <p class="separacaoComentario">Comentários (3)</p>
+            <article id="blocoComentario">
+                <article id="avaliacoesProduto">
+                    <section class="comentario">
+                        <figure class="fotoPerfilComentario">
+                            <img
+                                src="images/Comentários/user1.png"
+                                alt="Foto de perfil. Mulher sorrindo."
+                                height="80px"
+                            />
+                        </figure>
+                        <article class="conteudoComentario">
+                            <p class="user">@mariayasmin</p>
+                            <figure class="estrelasComentário">
+                                <img
+                                    src="images/Comentários/5star.png"
+                                    alt="Avaliado em 5 estrelas"
+                                    height="20px"
+                                />
+                            </figure>
+                            <p class="fraseComentario">
+                                Muito linda! Peça de ótima qualidade.
+                            </p>
+                        </article>
+                    </section>
+                </article>
+            </article>
+            <article id="blocoComentario">
+                <article id="avaliacoesProduto">
+                    <section class="comentario">
+                        <figure class="fotoPerfilComentario">
+                            <img
+                                src="images/Comentários/user2.png"
+                                alt="Foto de perfil. Mulher sorrindo."
+                                height="80px"
+                            />
+                        </figure>
+                        <article class="conteudoComentario">
+                            <p class="user">@123carol</p>
+                            <figure class="estrelasComentário">
+                                <img
+                                    src="images/Comentários/4star.png"
+                                    alt="Avaliado em 5 estrelas"
+                                    height="20px"
+                                />
+                            </figure>
+                            <p class="fraseComentario">Jóia linda.</p>
+                        </article>
+                    </section>
+                </article>
+            </article>
+            <article id="blocoComentario">
+                <article id="avaliacoesProduto">
+                    <section class="comentario">
+                        <figure class="fotoPerfilComentario">
+                            <img
+                                src="images/Comentários/user3.png"
+                                alt="Foto de perfil. Mulher sorrindo."
+                                height="80px"
+                            />
+                        </figure>
+                        <article class="conteudoComentario">
+                            <p class="user">@danielamarques</p>
+                            <figure class="estrelasComentário">
+                                <img
+                                    src="images/Comentários/5star.png"
+                                    alt="Avaliado em 5 estrelas"
+                                    height="20px"
+                                />
+                            </figure>
+                            <p class="fraseComentario">Amei!</p>
+                        </article>
+                    </section>
+                </article>
+            </article>
+            <article>
+                <h3 id="tituloNovoComentario">Adicionar novo comentário</h3>
+                <section id="blocoNovoComentario">
+                    <input
+                        id="novoComentario"
+                        type="text"
+                        placeholder="Escreva seu comentário aqui."
+                    />
+                    <button id="enviarNovoComentario">ENVIAR</button>
+                </section>
+            </article>
+        </main>
 
-        
-    </main>
+        <footer>
+            <section id="formasPagamento">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <ul>
+                    <li>
+                        <img
+                            src="images/Rodape/icon_cartao.png"
+                            alt="Ícone de cartão de crédito e débito"
+                            height="25px"
+                        />Débito / Crédito
+                    </li>
+                    <li>
+                        <img
+                            src="images/Rodape/icon_pix.png"
+                            alt="Ícone PIX"
+                            height="25px"
+                        />PIX
+                    </li>
+                    <li>
+                        <img
+                            src="images/Rodape/icon_boleto.png"
+                            alt="Ícone de boleto bancário"
+                            height="25px"
+                        />Boleto
+                    </li>
+                </ul>
+            </section>
+            <section id="sobreNos">
+                <h3>SOBRE NÓS</h3>
+                <ul>
+                    <li><a href="">Conheça a Zirco</a></li>
+                    <li><a href="">Políticas de privacidade</a></li>
+                    <li><a href="">Políticas de entrega</a></li>
+                    <li><a href="">Direitos do consumidor</a></li>
+                </ul>
+            </section>
+            <section id="sac">
+                <h3>SAC</h3>
+                <ul>
+                    <li>(19) 12345 - 6789</li>
+                    <li>(11) 98765 - 4321</li>
+                </ul>
+            </section>
+            <section id="redesSociais">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li>
+                        <img
+                            src="./images/Rodape/icon_facebook.png"
+                            alt="Logo Facebook"
+                            height="28px"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/Rodape/icon_instagram.png"
+                            alt="Logo instagram"
+                            height="28px"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/Rodape/icon_whatsapp.png"
+                            alt="Logo WhatsApp"
+                            height="28px"
+                        />
+                    </li>
+                </ul>
+            </section>
 
-    <footer>
-        <section id="formasPagamento">
-            <h3>FORMAS DE PAGAMENTO</h3>
-            <ul>
-                <li><img src="images/Rodape/icon_cartao.png" alt="Ícone de cartão de crédito e débito" height="25px"/>Débito / Crédito</li>
-                <li><img src="images/Rodape/icon_pix.png" alt="Ícone PIX" height="25px"/>PIX</li>
-                <li><img src="images/Rodape/icon_boleto.png" alt="Ícone de boleto bancário" height="25px"/>Boleto</li>
-            </ul>
-        </section>
-        <section id="sobreNos">
-            <h3>SOBRE NÓS</h3>
-            <ul>
-                <li><a href="">Conheça a Zirco</a></li>
-                <li><a href="">Políticas de privacidade</a></li>
-                <li><a href="">Políticas de entrega</a></li>
-                <li><a href="">Direitos do consumidor</a></li>
-            </ul>
-        </section>
-        <section id="sac">
-            <h3>SAC</h3>
-            <ul>
-                <li>(19) 12345 - 6789</li>
-                <li>(11) 98765 - 4321</li>
-            </ul>
-        </section>
-        <section id="redesSociais">
-            <h3>REDES SOCIAIS</h3>
-            <ul>
-                <li><img src="./images/Rodape/icon_facebook.png" alt="Logo Facebook" height="28px"/></li>
-                <li><img src="images/Rodape/icon_instagram.png" alt="Logo instagram" height="28px"/></li>
-                <li><img src="images/Rodape/icon_whatsapp.png" alt="Logo WhatsApp" height="28px"/></li>
-            </ul>
-        </section>
-
-        <section id="direitos">
-            <p>ZIRCO | Todos os direitos reservados.</p>
-        </section>
-    </footer>
-</body>
-</html
+            <section id="direitos">
+                <p>ZIRCO | Todos os direitos reservados.</p>
+            </section>
+        </footer>
+    </body>
+</html>

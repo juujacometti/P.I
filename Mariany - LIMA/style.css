@@ -1,779 +1,880 @@
-@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 
-*{
-margin: 0;
-padding: 0;
-overflow-x: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Página inicial */
 
 #cabecalho {
-  border: 1px solid rgb(213, 213, 213);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  padding: 60px;
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
 }
 
 #figureCabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
 }
 
 #logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 5px
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
 }
 
 #busca {
-  position: absolute;
-  left: 4%;
+    position: absolute;
+    left: 4%;
 }
 
-#busca:hover, #perfil:hover, #carrinho:hover{
-  transform: scale(1.08);
+#busca:hover,
+#perfil:hover,
+#carrinho:hover {
+    transform: scale(1.08);
 }
 
 #perfil {
-  position: absolute;
-  right: 7%;
+    position: absolute;
+    right: 7%;
 }
 
-#carrinho{
-  position: absolute;
-  right: 4%;
+#carrinho {
+    position: absolute;
+    right: 4%;
 }
 
-nav a{
-  text-decoration: none;
-  color: #131662;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  position: relative;
+nav a {
+    text-decoration: none;
+    color: #131662;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: relative;
 }
 
-nav a::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background: black;
-  transition: 0.3s ease;
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: 0.3s ease;
 }
 
-nav a:hover::after{
-  width: 100%;
+nav a:hover::after {
+    width: 100%;
 }
 
-nav ul{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 200px;
-  margin-top: 18px;
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 18px;
 }
 
-#capa{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 70px;
+#capa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
-#favoritos{
-  background: linear-gradient(to right, #0E53B5, #131662);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 50px;
-  margin-bottom: 40px;
+#favoritos {
+    background: linear-gradient(to right, #0e53b5, #131662);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-bottom: 40px;
 }
 
-#favoritosTitulo{
-  background: linear-gradient(to right, #0E53B5, #131662);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 10px ;
-  font-size: 50px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+#favoritosTitulo {
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.produtoFavorito{
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-  cursor: pointer;
+.produtoFavorito {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.produtoFavorito:hover{
-  transform: scale(1.02)
+.produtoFavorito:hover {
+    transform: scale(1.02);
 }
 
-.produtoFavoritoTexto{
-  text-align: center;
+.produtoFavoritoTexto {
+    text-align: center;
 }
 
-.produtoFavoritoTexto p{
-  text-align: center;
-  font-size: 20px;
+.produtoFavoritoTexto p {
+    text-align: center;
+    font-size: 20px;
 }
 
 #categoriasProdutos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
 }
 
-#categoriasTitulo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #131662;
-  padding: 18px;
-  padding-top: 80px;
+#categoriasTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    padding: 18px;
+    padding-top: 80px;
 }
 
 .categoriaNome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Zain", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 28px;
-  color: #131662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: #131662;
 }
 
 .categoria:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #beneficiosCliente {
-  background: linear-gradient(to right, #FFFFFF, #DDDDDD);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 130px;
-  padding: 60px;
-  margin-top: 120px;
+    background: linear-gradient(to right, #ffffff, #dddddd);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 130px;
+    padding: 60px;
+    margin-top: 120px;
 }
 
 .beneficio {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  white-space: normal;
-  width: 250px;
-  color: #131662;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    width: 250px;
+    color: #131662;
 }
 
 .beneficio img {
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .beneficio h3 {
-  font-family: "Zain", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 25px;
-  cursor: pointer;
-  padding-top: 20px;
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    cursor: pointer;
+    padding-top: 20px;
 }
 
-.beneficio p{
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
-  cursor: pointer;
+.beneficio p {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 footer {
-  background: linear-gradient(to right, #0E53B5, #131662);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 100px;
-  margin-top: 70px;
-  padding-top: 30px;
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  flex-wrap: wrap;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 70px;
+    padding-top: 30px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    flex-wrap: wrap;
 }
 
 ul {
-  padding: 0;
+    padding: 0;
 }
 
-footer ul{
-  font-size: 22px;
+footer ul {
+    font-size: 22px;
 }
 
-#formasPagamento img{
-  margin-right: 10px;
+#formasPagamento img {
+    margin-right: 10px;
 }
 
-#sobreNos a{
-  text-decoration: none;
-  color: #FFFFFF;
+#sobreNos a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
-#sobreNos a:hover{
-  transform: scale(1.05);
-  cursor: pointer;
-  color: rgb(195, 220, 255);
-  text-decoration: underline;
+#sobreNos a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: rgb(195, 220, 255);
+    text-decoration: underline;
 }
 
-#redesSociais ul{
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+#redesSociais ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-#direitos{
-  flex-basis: 100%;
-  background-color: #0F1249;
-  padding: 8px;
-  text-align: center;
-  font-family: "Belleza", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 16px;
+#direitos {
+    flex-basis: 100%;
+    background-color: #0f1249;
+    padding: 8px;
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
 }
-
 
 /* Tela de busca */
 
 #buscando {
-  position: absolute;
-  left: 4%;
+    position: absolute;
+    left: 4%;
 }
 
-h1, #itemBuscado, #quantidadeProdutosEncontrados {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #131662;
-  margin-left: 40px;
+h1,
+#itemBuscado,
+#quantidadeProdutosEncontrados {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    margin-left: 40px;
 }
 
 h1 {
-  font-size: 45px;
-  margin-top: 45px;
+    font-size: 45px;
+    margin-top: 45px;
 }
 
 #itemBuscado {
-  font-size: 30px;
-  margin-top: 15px;
+    font-size: 30px;
+    margin-top: 15px;
 }
 
-#quantidadeProdutosEncontrados{
-  font-size: 25px;
-  margin-top: 15px;
+#quantidadeProdutosEncontrados {
+    font-size: 25px;
+    margin-top: 15px;
 }
 
-#todosResultadosBusca{
-  display: grid; 
-  gap: 100px;
-  max-width: 2000px; 
-  grid-template-columns: repeat(4, 320px);
-  margin: 70px auto 0 auto;
-  justify-content: center; 
+#todosResultadosBusca {
+    display: grid;
+    gap: 100px;
+    max-width: 2000px;
+    grid-template-columns: repeat(4, 320px);
+    margin: 70px auto 0 auto;
+    justify-content: center;
 }
 
-.resultadosBusca{
-  border: 1px solid #e4eefc;
-  border-radius: 10px;
-  background-color:   ;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-top: 25px;
-  margin-bottom: 15px;
+.resultadosBusca {
+    border: 1px solid #e4eefc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-.resultadosBusca a{
-  text-decoration: none;
-  color: #131662;
+.resultadosBusca a {
+    text-decoration: none;
+    color: #131662;
 }
 
-.resultadosBusca:hover{
-  transform: scale(1.05);
-  cursor: pointer;
-  border-radius: 10px;
+.resultadosBusca:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-.resultadosBuscaTexto{
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-  text-align: center;
-  color: #131662;
+.resultadosBuscaTexto {
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #131662;
 }
 
-.resultadosBuscaTexto:hover{
-  font-weight: 400;
-  font-style: bold;
-  font-size: 20px;
+.resultadosBuscaTexto:hover {
+    font-weight: 400;
+    font-style: bold;
+    font-size: 20px;
 }
 
 #botaoCarrinho {
-  color: #131662;
-  border: none;
-  border-radius: 10px;
-  padding: 8px;
-  margin-top: 8px;
-  font-family: "Zain", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 25px;
-  text-align: center;
-  gap: 5px;
-  background-color: #d6e4f8;
+    color: #131662;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 8px;
+    font-family: "Zain", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    gap: 5px;
+    background-color: #d6e4f8;
 }
 
 #botaoCarrinho:hover {
-  background-color: #131662;
-  color: #FFFFFF;
-  border-radius: 10px;
-  cursor: pointer;
+    background-color: #131662;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
 }
-
 
 /* Tela de produto específico */
 
 #produto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 #produtoEspecifico {
-  margin: 30px 0px 0px 80px;
+    margin: 30px 0px 0px 80px;
 }
-
 
 #tituloProdutoEspecifico {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: bold;
-  font-size: 45px;
-  color: #131662;
-  margin-top: 60px;
-  padding-bottom: 15px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 45px;
+    color: #131662;
+    margin-top: 60px;
+    padding-bottom: 15px;
 }
 
-#breveDescricaoProdutoEspecifico{
-  padding-left: 42px;
+#breveDescricaoProdutoEspecifico {
+    padding-left: 42px;
 }
 
 #descricaoProdutoEspecifico {
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  color: #131662;
-  display: block;
-  margin-top: 50px;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #131662;
+    display: block;
+    margin-top: 50px;
 }
 
-
 #precoProdutoEspecifico {
-  font-weight: 500;
-  font-style: bold;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+    font-weight: 500;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 #parcelamentoProdutoEspecifico {
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-} 
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 
 hr {
-  border: 1px solid #13166220;
+    border: 1px solid #13166220;
 }
 
 #produto img {
-  border-radius: 60px;
-  padding: 3px;
+    border-radius: 60px;
+    padding: 3px;
 }
 
 #material {
-  padding-top: 30px;
-  padding-bottom: 5px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
 }
 
 #ouro {
-  border: 3px solid #0E53B5;
+    border: 3px solid #0e53b5;
 }
 
-#divisaoMaterialQuantidade{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+#divisaoMaterialQuantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #alterarQuantidade {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #quantidade {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  margin-left: 60px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 60px;
 }
 
 #quantidadeProduto {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid #131662;
-  font-size: 20px;
-  display: block;
-  flex-direction: column;
-} 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #131662;
+    font-size: 20px;
+    display: block;
+    flex-direction: column;
+}
 
 #botaoAdicionarCarrinho {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
 }
 
 #adicionarCarrinho {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 10px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  background-color: #181b76;
-  color: #FFFFFF;
-  border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    background-color: #181b76;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
 #adicionarCarrinho:hover {
-  cursor: pointer;
-  background-color: #0F1249;
+    cursor: pointer;
+    background-color: #0f1249;
 }
 
-#detalhesProduto{
-  margin-top: 15px;
+#detalhesProduto {
+    margin-top: 15px;
 }
 
-#detalhesProduto h2{
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-  color: #131662  ;
+#detalhesProduto h2 {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #131662;
 }
 
 #detalhesProduto p {
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #131662;
 }
 
 ul {
-  list-style-type: disc;
-  padding-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 #tituloComentario {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  color: #131662;
-  font-size: 40px;
-  padding-left: 25px;
-  padding-top: 40px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-top: 40px;
 }
 
 .separacaoComentario {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  color: #131662;
-  font-size: 25px;
-  padding-left: 25px;
-  padding-top: 15px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
 }
 
 #blocoComentario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
 }
 
 .comentario {
-  display: flex;
+    display: flex;
 }
 
 #avaliacoesProduto {
-  border: 1px solid #e1e4e8;
-  border-radius: 10px;
-  background-color: #EFF2F6;    /* Alterar cor, contraste não suficiente*/
-  width: 100em;
-  display: flex;
-  padding: 15px;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    width: 100em;
+    display: flex;
+    padding: 15px;
 }
 
-.user, .conteudoComentario {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  height: fit-content;
-  margin-left: 10px;
+.user,
+.conteudoComentario {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    height: fit-content;
+    margin-left: 10px;
 }
 
 .user {
-  font-size: 30px;
-  font-style: bold;
-  font-weight: 500;
-  color: #131662;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    color: #131662;
 }
 
 .fraseComentario {
-  margin-left: 10px;
-  color: #131662;
+    margin-left: 10px;
+    color: #131662;
 }
 
 .estrelasComentário {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #tituloNovoComentario {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  color: #131662;
-  font-size: 30px;
-  padding-left: 25px;
-  padding-top: 15px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    font-size: 30px;
+    padding-left: 25px;
+    padding-top: 15px;
 }
 
 #novoComentario {
-  border: 1px solid #e1e4e8;
-  border-radius: 10px;
-  background-color: #EFF2F6;  /* Alterar cor, contraste não suficiente*/
-  width: 50em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 45px;
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-bottom: 30px;
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  color: #131662;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    width: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #131662;
 }
 
 ::placeholder {
-  color: #131662bc;
+    color: #131662bc;
 }
 
 #enviarNovoComentario {
-  padding: 20px;
-  border-radius: 10px;
-  margin-left: 10px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  color: #FFFFFF;
-  font-size: 20px;
-  background-color: #131662;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #131662;
 }
 
-#enviarNovoComentario:hover{
-  background-color: #0F1249;
-  cursor: pointer;
+#enviarNovoComentario:hover {
+    background-color: #0f1249;
+    cursor: pointer;
 }
 
 #blocoNovoComentario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 /* Tela de carrinho */
 
 #carrinhoCompleto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .produtoCarrinho {
-  border: 1px solid #e4eefc;
-  background-color: #EFF2F6;  /* Alterar cor, contraste não suficiente*/  
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-left: 35px;
-  margin-top: 25px;
-  width: 80em;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    border: 1px solid #e4eefc;
+    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    width: 80em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .textoProdutoCarrinho {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #131662;
 }
 
-.lixeira:hover, .lixeira2:hover {
-  transform: scale(1.08);
-  cursor: pointer;
+.lixeira:hover,
+.lixeira2:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 .lixeira {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 #resumoProdutosCarrinho {
-  border: 1px solid #c4d7f0;
-  border-radius: 10px;
-  width: 30em;
-  margin-left: 60px;
-  padding: 30px;
+    border: 1px solid #c4d7f0;
+    border-radius: 10px;
+    width: 30em;
+    margin-left: 60px;
+    padding: 30px;
 }
 
 #resumoCarrinhoTitulo {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  font-size: 35px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-top: 10px;
-  color: #131662;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #131662;
 }
 
-#subtotal, #calculoEntrega, #total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  color: #131662;
-  padding: 15px;
+#subtotal,
+#calculoEntrega,
+#total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #131662;
+    padding: 15px;
 }
 
 .categoriaResumoCompra {
-  font-weight: 600;
-  font-style: bold;
+    font-weight: 600;
+    font-style: bold;
 }
 
 #precoTotal {
-  color: #0E53B5;
-  font-weight: 600;
-  font-style: bold;
+    color: #0e53b5;
+    font-weight: 600;
+    font-style: bold;
 }
 
-#botaoFinalizarCompra, #botaoContinuarComprando {
-  border-radius: 10px;
-  padding: 20px;
-  width: 400px;
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  font-size: 18px;  
-  outline: none;
-  border: none;
+#botaoFinalizarCompra,
+#botaoContinuarComprando {
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    outline: none;
+    border: none;
 }
 
-#botaoFinalizarCompra:hover, #botaoContinuarComprando:hover {
-  cursor: pointer;
-  background-color: #131662;
+#botaoFinalizarCompra:hover,
+#botaoContinuarComprando:hover {
+    cursor: pointer;
+    background-color: #131662;
 }
 
 #botaoFinalizarCompra {
-  background: linear-gradient(to right, #0E53B5, #131662);
-  color: white;
-  border: 1px solid #1c2090;
-  margin-top: 10px;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    border: 1px solid #1c2090;
+    margin-top: 10px;
 }
 
 #botaoContinuarComprando {
-  background-color: #EFF2F6; 
-  color: #131662;
-  margin-top: 10px;
-  margin-bottom: 20px;
+    background-color: #eff2f6;
+    color: #131662;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #alinharBotoesCarrinho {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Categorias - Prata 925, Ouro 18k, Banhados a ouro e Todos os produtos */
+
+#bannerPrata925,
+#bannerOuro18k,
+#bannerBanhados {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Página de Login */
+
+#mainLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    }
+
+#caixaLogin {
+    border-radius: 10px;
+    width: 35em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin: 5px;
+}
+
+#loginTitulo {
+    text-align: center;
+    
+}
+#formLogin {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.labelLogin {
+    padding: 8px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #131662;
+}
+
+.inputLogin {
+    padding: 22px;
+    border-radius: 10px;
+    width: 35em;
+    margin-top: 5p;
+    border: none;
+    border: 1px solid #131662;
+}
+
+.inputLogin::placeholder {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #13166273;
+
+}
+
+#esqueceuSenha {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 3%;
+    color: #131662;
+}
+
+#esqueceuSenha:hover {
+    transform: scale(1.02);
+}
+
+#confirmacaoLogin {
+    padding: 20px;
+    width: 50%;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+#confirmacaoLogin:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 
-/* Categoria - Prata 925 */
-
-#bannerPrata925 {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
