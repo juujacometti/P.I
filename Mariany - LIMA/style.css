@@ -284,7 +284,6 @@ footer ul {
     left: 4%;
 }
 
-h1,
 #itemBuscado,
 #quantidadeProdutosEncontrados {
     font-family: "Belleza", sans-serif;
@@ -814,11 +813,12 @@ ul {
 }
 
 #loginTitulo, #cadastroTitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    align-items: center; 
     text-align: center;
-    width: 100%; 
     margin-top: 20px; 
 }
 
@@ -930,7 +930,14 @@ ul {
 /*  Finalização de compra */
 
 .processoCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
     width: 80em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 80px;
 }
 
 .cabecalhoFinalizarCompra {
@@ -939,8 +946,6 @@ ul {
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     text-align: center;
-    margin-top: 50px;
-    border-radius: 10px 10px 0px 0px;
 }
 
 .cabecalhoFinalizarCompra h1{
@@ -965,7 +970,6 @@ ul {
 }
 
  .passosFinalizarCompraCabecalho {
-    border: 1px solid red;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -975,7 +979,6 @@ ul {
  }
 
  .passo {
-    border: 1px solid blue;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1017,10 +1020,83 @@ ul {
 }
 
 .telaAtiva {
-    border: 1px solid green;
-    border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
+
+#tituloEndereco {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #131662;
+    margin-bottom: 20px;
+}
+
+.grupoFormulario {
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.grupoFormulario label {
+    font-size: 22px;
+    color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+}
+
+.grupoFormulario input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #131662;
+}
+
+#cep::placeholder, #rua::placeholder, #numero::placeholder, #complemento::placeholder, #bairro::placeholder, #cidade::placeholder {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #13166273;
+}
+
+#estado {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botaoVoltarInativo {
+    background-color: #13166257;
+    color: #13166297;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.botaoProximo {
+    background-color: #131662;
+    color: white;
+    overflow: hidden;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.botaoProximo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+

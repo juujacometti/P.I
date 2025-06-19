@@ -75,40 +75,40 @@
         
          <article class="telaAtiva">
             <div class="conteudoProcessoCompra">
-                <section class="secao" aria-labelledby="titulo-endereco">
+                <section class="secao">
                     <div class="cabecalhoSecao">
-                        <h2 id="tituloEndereco">Endereço de Entrega</h2>
+                        <h2 id="tituloEndereco">📦 Endereço de Entrega</h2>
                     </div>
-                    <div class="corpo-secao">
-                        <form class="info-endereco" id="formulario-endereco">
-                            <div class="grupo-formulario">
+                    <div class="corpoSecao">
+                        <form class="infoEndereco">
+                            <div class="grupoFormulario">
                                 <label for="cep">CEP</label>
-                                <input type="text" id="cep" class="controle-formulario" placeholder="00000-000" required>
+                                <input type="text" id="cep" class="controleFormulario" placeholder="00000-000" maxlength="9" required>
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="rua">Rua</label>
-                                <input type="text" id="rua" class="controle-formulario" placeholder="Nome da rua" required>
+                                <input type="text" id="rua" class="controleFormulario" placeholder="Nome da rua" required>
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="numero">Número</label>
-                                <input type="text" id="numero" class="controle-formulario" placeholder="Número" required>
+                                <input type="text" id="numero" class="controleFormulario" placeholder="Número" required>
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="complemento">Complemento</label>
-                                <input type="text" id="complemento" class="controle-formulario" placeholder="Apto, bloco, etc.">
+                                <input type="text" id="complemento" class="controleFormulario" placeholder="Apto, bloco, etc.">
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="bairro">Bairro</label>
-                                <input type="text" id="bairro" class="controle-formulario" placeholder="Nome do bairro" required>
+                                <input type="text" id="bairro" class="controleFormulario" placeholder="Nome do bairro" required>
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="cidade">Cidade</label>
-                                <input type="text" id="cidade" class="controle-formulario" placeholder="Nome da cidade" required>
+                                <input type="text" id="cidade" class="controleFormulario" placeholder="Nome da cidade" required>
                             </div>
-                            <div class="grupo-formulario">
+                            <div class="grupoFormulario">
                                 <label for="estado">Estado</label>
-                                <select id="estado" class="controle-formulario" required>
-                                    <option value="">Selecione</option>
+                                <select id="estado" class="controleFormulario" required>
+                                    <option class="selecioneOpcao" value="">Selecione</option>
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AP">Amapá</option>
@@ -143,84 +143,85 @@
                 </section>
             </div>
             
-            <section class="acoes">
-                <button type="button" class="botao botao-secundario" disabled>Voltar</button>
-                <button type="button" class="botao botao-primario" id="proximo-1">Próximo</button>
+            <section class="botaoAcao">
+                <a class="botaoVoltarInativo">Voltar</a>
+                <a class="botaoProximo" id="proximo1">Próximo</a>
             </section>
         </article>
+        </main>
 
 
-         <footer>
-            <section id="formasPagamento">
-                <h3>FORMAS DE PAGAMENTO</h3>
-                <ul>
-                    <li>
-                        <img
-                            src="images/Rodape/icon_cartao.png"
-                            alt="Ícone de cartão de crédito e débito"
-                            height="25px"
-                        />Débito / Crédito
-                    </li>
-                    <li>
-                        <img
-                            src="images/Rodape/icon_pix.png"
-                            alt="Ícone PIX"
-                            height="25px"
-                        />PIX
-                    </li>
-                    <li>
-                        <img
-                            src="images/Rodape/icon_boleto.png"
-                            alt="Ícone de boleto bancário"
-                            height="25px"
-                        />Boleto
-                    </li>
-                </ul>
-            </section>
-            <section id="sobreNos">
-                <h3>SOBRE NÓS</h3>
-                <ul>
-                    <li><a href="">Conheça a Zirco</a></li>
-                    <li><a href="">Políticas de privacidade</a></li>
-                    <li><a href="">Políticas de entrega</a></li>
-                    <li><a href="">Direitos do consumidor</a></li>
-                </ul>
-            </section>
-            <section id="sac">
-                <h3>SAC</h3>
-                <ul>
-                    <li>(19) 12345 - 6789</li>
-                    <li>(11) 98765 - 4321</li>
-                </ul>
-            </section>
-            <section id="redesSociais">
-                <h3>REDES SOCIAIS</h3>
-                <ul>
-                    <li>
-                        <img
-                            src="./images/Rodape/icon_facebook.png"
-                            alt="Logo Facebook"
-                            height="28px"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="images/Rodape/icon_instagram.png"
-                            alt="Logo instagram"
-                            height="28px"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="images/Rodape/icon_whatsapp.png"
-                            alt="Logo WhatsApp"
-                            height="28px"
-                        />
-                    </li>
-                </ul>
-            </section>
+        <footer>
+        <section id="formasPagamento">
+            <h3>FORMAS DE PAGAMENTO</h3>
+            <ul>
+                <li>
+                    <img
+                        src="images/Rodape/icon_cartao.png"
+                        alt="Ícone de cartão de crédito e débito"
+                        height="25px"
+                    />Débito / Crédito
+                </li>
+                <li>
+                    <img
+                        src="images/Rodape/icon_pix.png"
+                        alt="Ícone PIX"
+                        height="25px"
+                    />PIX
+                </li>
+                <li>
+                    <img
+                        src="images/Rodape/icon_boleto.png"
+                        alt="Ícone de boleto bancário"
+                        height="25px"
+                    />Boleto
+                </li>
+            </ul>
+        </section>
+        <section id="sobreNos">
+            <h3>SOBRE NÓS</h3>
+            <ul>
+                <li><a href="">Conheça a Zirco</a></li>
+                <li><a href="">Políticas de privacidade</a></li>
+                <li><a href="">Políticas de entrega</a></li>
+                <li><a href="">Direitos do consumidor</a></li>
+            </ul>
+        </section>
+        <section id="sac">
+            <h3>SAC</h3>
+            <ul>
+                <li>(19) 12345 - 6789</li>
+                <li>(11) 98765 - 4321</li>
+            </ul>
+        </section>
+        <section id="redesSociais">
+            <h3>REDES SOCIAIS</h3>
+            <ul>
+                <li>
+                    <img
+                        src="./images/Rodape/icon_facebook.png"
+                        alt="Logo Facebook"
+                        height="28px"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="images/Rodape/icon_instagram.png"
+                        alt="Logo instagram"
+                        height="28px"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="images/Rodape/icon_whatsapp.png"
+                        alt="Logo WhatsApp"
+                        height="28px"
+                    />
+                </li>
+            </ul>
+        </section>
 
-            <section id="direitos">
-                <p>ZIRCO | Todos os direitos reservados.</p>
-            </section>
-        </footer>
+        <section id="direitos">
+            <p>ZIRCO | Todos os direitos reservados.</p>
+        </section>
+    </footer>
