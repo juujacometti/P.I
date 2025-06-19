@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="p-br">
+<html id="htmlLogin" lang="p-br">
 <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,23 +7,28 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images/logo.png" type="image/x-icon" />
 </head>
-<body>
+<body id="bodyLogin">
     
     <main id="mainLogin">
         <section id="caixaLogin">
+            <img src="images/login_cadastro.png" alt="Bonequinho representando uma pessoa" id="bonequinho"/>
             <h1 id="loginTitulo">Fazer login</h1>
             <form id="formLogin">
-                <label class="labelLogin" for="email">E-mail:</label>
-                <input class="inputLogin" type="email" id="email" name="email" placeholder=" Insira o seu e-mail. Ex: maria@email.com" required>      
-                
-                <label class="labelLogin" for="senha">Senha:</label>
-                <input class="inputLogin" type="password" id="senha" name="senha" placeholder=" Insira a sua senha." required>
-
-                <div id="esqueceuSenha">
-                    <p>Esqueceu a sua senha?</p><a href="#">Clique aqui!</a>
+                <div class="campoLogin">
+                    <label class="labelLogin" for="email">E-mail:</label>
+                    <input class="inputLogin" type="email" id="email" name="email" placeholder=" Insira o seu e-mail. Ex: maria@email.com" required>
+                </div>
+                      
+                <div class="campoLogin">
+                    <label class="labelLogin" for="senha">Senha:</label>
+                    <input class="inputLogin" type="password" id="senha" name="senha" placeholder=" Insira a sua senha." required>
                 </div>
 
-                <button id="confirmacaoLogin" type="submit">Entrar</button>
+                <div id="cadastreSe">
+                    <p>Ainda não possui login?</p><a href="cadastro.html">Cadastre-se!</a>
+                </div>
+
+                <a id="confirmacaoLogin" href="finalizarCompra.html">Entrar</a>
             </form>
         </section>
     </main>

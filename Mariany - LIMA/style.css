@@ -784,7 +784,13 @@ ul {
 
 /* Página de Login */
 
-#mainLogin {
+#htmlLogin, #bodyLogin, #bodyCadastro, #htmlCadastro {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainLogin, #mainCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -795,19 +801,28 @@ ul {
     width: 100%;
     }
 
-#caixaLogin {
+#caixaLogin, #caixaCadastro {
     border-radius: 10px;
-    width: 35em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: white;
-    margin: 5px;
+    width: 100%;
+    max-width: 35em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#loginTitulo {
+#loginTitulo, #cadastroTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
+    width: 100%; 
+    margin-top: 20px; 
 }
-#formLogin {
+
+#formLogin, #formCadastro {
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -816,7 +831,14 @@ ul {
     overflow: hidden;
 }
 
-.labelLogin {
+.campoLogin, .campoCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+
+.labelLogin, .labelCadastro {
     padding: 8px;
     font-family: "Zain", sans-serif;
     font-weight: 400;
@@ -824,7 +846,7 @@ ul {
     color: #131662;
 }
 
-.inputLogin {
+.inputLogin, .inputCadastro {
     padding: 22px;
     border-radius: 10px;
     width: 35em;
@@ -838,10 +860,9 @@ ul {
     font-weight: 400;
     font-size: 24px;
     color: #13166273;
-
 }
 
-#esqueceuSenha {
+#cadastreSe, #facaLogin {
     display: flex;
     gap: 4px;
     justify-content: center;
@@ -853,11 +874,11 @@ ul {
     color: #131662;
 }
 
-#esqueceuSenha:hover {
+#cadstreSe:hover {
     transform: scale(1.02);
 }
 
-#confirmacaoLogin {
+#confirmacaoLogin, #confirmarCadastro {
     padding: 20px;
     width: 50%;
     font-family: "Belleza", sans-serif;
@@ -870,6 +891,8 @@ ul {
     border: none;
     border-radius: 10px;
     margin-top: 18px;
+    text-decoration: none;
+    text-align: center;
 }
 
 #confirmacaoLogin:hover {
@@ -877,4 +900,127 @@ ul {
     cursor: pointer;
 }
 
+/*  Cadastro  */
 
+#bonequinho {
+    width: 90px;
+    border: none;
+    border-radius: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #0e53b5, #131662);
+}
+
+.inputCadastro::placeholder {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #13166273;
+}
+
+#facaLogin:hover {
+    transform: scale(1.02);
+}
+
+#confirmarCadastro:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*  Finalização de compra */
+
+.processoCompra {
+    width: 80em;
+}
+
+.cabecalhoFinalizarCompra {
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cabecalhoFinalizarCompra h1{
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cabecalhoFinalizarCompra p{
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+ .passosFinalizarCompraCabecalho {
+    border: 1px solid red;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #a6c9fe8b;
+ }
+
+ .passo {
+    border: 1px solid blue;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+ }
+
+ .numeroPasso {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a3c1dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px;
+    font-weight: bold;
+    color: #131662;
+    font-size: 20px;
+ }
+
+ .tituloPasso {
+    font-size: 22px;
+    color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+}
+
+.passoAtivo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #131662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.telaAtiva {
+    border: 1px solid green;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
