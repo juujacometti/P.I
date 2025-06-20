@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zirco | Finalizar compra 1</title>
+        <title>Zirco | Finalizar compra 3</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images/logo.png" type="image/x-icon" />
     </head>
@@ -48,15 +48,16 @@
             </nav>
         </header>
 
-        <main class="processoCompra">
-        <div class="cabecalhoFinalizarCompra">
+<main class="processoCompra">
+
+    <div class="cabecalhoFinalizarCompra">
             <h1>Finalização da Compra</h1>
             <p>Confirme seus dados e finalize seu pedido</p>
         </div>
-        
-        <section class="passosFinalizarCompraCabecalho">
+
+    <section class="passosFinalizarCompraCabecalho">
             <div class="passo">
-                <div class="passoAtivo">1</div>
+                <div class="numeroPasso">1</div>
                 <div class="tituloPasso">Endereço</div>
             </div>
             <div class="passo" id="passo2">
@@ -64,7 +65,7 @@
                 <div class="tituloPasso">Pagamento</div>
             </div>
             <div class="passo" id="passo3">
-                <div class="numeroPasso">3</div>
+                <div class="passoAtivo">3</div>
                 <div class="tituloPasso">Entrega</div>
             </div>
             <div class="passo" id="passo4">
@@ -72,79 +73,48 @@
                 <div class="tituloPasso">Finalizar</div>
             </div>
         </section>
-        
-         <article class="telaAtiva">
-                        <h2 id="tituloEndereco">📦 Endereço de Entrega</h2>
-                        <form class="infoEndereco">
-                            <div class="grupoFormulario">
-                                <label for="cep">CEP</label>
-                                <input type="text" id="cep" class="controleFormulario" placeholder="00000-000" maxlength="9" required>
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="rua">Rua</label>
-                                <input type="text" id="rua" class="controleFormulario" placeholder="Nome da rua" required>
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="numero">Número</label>
-                                <input type="text" id="numero" class="controleFormulario" placeholder="Número" required>
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="complemento">Complemento</label>
-                                <input type="text" id="complemento" class="controleFormulario" placeholder="Apto, bloco, etc.">
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="bairro">Bairro</label>
-                                <input type="text" id="bairro" class="controleFormulario" placeholder="Nome do bairro" required>
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="cidade">Cidade</label>
-                                <input type="text" id="cidade" class="controleFormulario" placeholder="Nome da cidade" required>
-                            </div>
-                            <div class="grupoFormulario">
-                                <label for="estado">Estado</label>
-                                <select id="estado" class="controleFormulario" required>
-                                    <option class="selecioneOpcao" value="">Selecione</option>
-                                    <option value="AC">Acre</option>
-                                    <option value="AL">Alagoas</option>
-                                    <option value="AP">Amapá</option>
-                                    <option value="AM">Amazonas</option>
-                                    <option value="BA">Bahia</option>
-                                    <option value="CE">Ceará</option>
-                                    <option value="DF">Distrito Federal</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    <option value="GO">Goiás</option>
-                                    <option value="MA">Maranhão</option>
-                                    <option value="MT">Mato Grosso</option>
-                                    <option value="MS">Mato Grosso do Sul</option>
-                                    <option value="MG">Minas Gerais</option>
-                                    <option value="PA">Pará</option>
-                                    <option value="PB">Paraíba</option>
-                                    <option value="PR">Paraná</option>
-                                    <option value="PE">Pernambuco</option>
-                                    <option value="PI">Piauí</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="RN">Rio Grande do Norte</option>
-                                    <option value="RS">Rio Grande do Sul</option>
-                                    <option value="RO">Rondônia</option>
-                                    <option value="RR">Roraima</option>
-                                    <option value="SC">Santa Catarina</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="SE">Sergipe</option>
-                                    <option value="TO">Tocantins</option>
-                                </select>
-                            </div>
-                        </form>
-        
+
+    <article class="telaAtiva">
+                    <div class="cabecalhoSecao">
+                        <h2 id="tituloEntrega">Método de Entrega 🚚</h2>
+                    </div>
+                    <div class="corpoSecao">
+                        <fieldset class="opcoesEntrega">
+                            <label class="opcaoEntrega">
+                                <input type="radio" name="entrega" value="padrao" required>
+                                <div class="infoOpcaoEntrega">
+                                    <h3 class="tituloOpcaoEntrega">Entrega Padrão</h3>
+                                    <p class="descricaoOpcaoEntrega">Entrega em até 5 dias úteis</p>
+                                </div>
+                                <div class="precoOpcaoEntrega">R$ 15,90</div>
+                            </label>
+                            <label class="opcaoEntrega">
+                                <input type="radio" name="entrega" value="expressa">
+                                <div class="infoOpcaoEntrega">
+                                    <h3 class="tituloOpcaoEntrega">Entrega Expressa</h3>
+                                    <p class="descricaoOpcaoEntrega">Entrega em até 2 dias úteis</p>
+                                </div>
+                                <div class="precoOpcaoEntrega">R$ 29,90</div>
+                            </label>
+                            <label class="opcaoEntrega">
+                                <input type="radio" name="entrega" value="retirada">
+                                <div class="infoOpcaoEntrega">
+                                    <h3 class="tituloOpcaoEntrega">Retirada na Loja</h3>
+                                    <p class="descricaoOpcaoEntrega">Disponível em 1 dia útil</p>
+                                </div>
+                                <div class="precoOpcaoEntrega">Grátis</div>
+                            </label>
+                        </fieldset>
+            </div>
             
             <section class="botaoAcao">
-                <a class="botaoVoltarInativo">Voltar</a>
-                <a class="botaoProximo" href="finalizarCompra2.html">Próximo</a>
+                <a class="botaoVoltar" href="finalizarCompra2.html">Voltar</a>
+                <a class="botaoProximo" href="finalizarCompra4.html">Próximo</a>
             </section>
         </article>
-        </main>
+</main>
 
-
-        <footer>
+<footer>
         <section id="formasPagamento">
             <h3>FORMAS DE PAGAMENTO</h3>
             <ul>

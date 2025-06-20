@@ -497,6 +497,7 @@ hr {
     background-color: #181b76;
     color: #ffffff;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 #adicionarCarrinho:hover {
@@ -927,7 +928,7 @@ ul {
     cursor: pointer;
 }
 
-/*  Finalização de compra */
+/*  Finalização de compra - Endereço */
 
 .processoCompra {
     display: flex;
@@ -1027,7 +1028,7 @@ ul {
     padding: 40px;
 }
 
-#tituloEndereco {
+#tituloEndereco, #tituloPagamento, #tituloEntrega, #tituloConfirmacao{
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -1036,7 +1037,6 @@ ul {
 }
 
 .grupoFormulario {
-    border: 1px solid red;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -1069,34 +1069,156 @@ ul {
     padding: 10px;
 }
 
+.botaoAcao {
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .botaoVoltarInativo {
     background-color: #13166257;
     color: #13166297;
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     border: none;
 }
 
-.botaoProximo {
+.botaoProximo, .botaoVoltar, .botaoConfirmar, .botaoPaginaInicial {
     background-color: #131662;
     color: white;
     overflow: hidden;
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    margin: 25px;
+}
+
+.botaoProximo:hover, .botaoVoltar:hover, .botaoConfirmar:hover, .botaoPaginaInicial:hover {
+    cursor: pointer;
+    background-color: #a3c1dd;
+    color: #131662;
+}
+
+/*  Finalização de compra - Pagamento */
+
+.metodosPagamento, .opcoesEntrega {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     border: none;
 }
 
-.botaoProximo:hover {
-    transform: scale(1.05);
+.metodoPagamento, .opcaoEntrega {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    color: #131662;
+    margin: 10px;
     cursor: pointer;
 }
 
+.botaoVoltar {
+    background-color: #0e53b5;
+}
 
+/*  Finalização de compra - Entrega */
 
+.precoOpcaoEntrega {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #0e53b5;
+    font-size: 26px;
+}
 
+/*  Compra confirmada */
+
+.cabecalhoSecaoConfirmada {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#compraConfirmada {
+    margin: 18px;
+}
+
+.botaoPaginaInicial {
+    font-size: 24px;
+}
+
+/* Sobre nós */
+
+#sobre, #entrega {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffffff, #dddddd);
+}
+
+.gridDuasColunas {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloSecao {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #131662;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.textoSecao {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #131662;
+}
+
+.subtituloSecao {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-weight: 300;
+    max-width: 700px;
+    color: #131662;
+    font-style: bold;
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+.imagemSobreNos img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    align-items: flex-start;
+}
+
+#privacidade, #direitosCliente {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
