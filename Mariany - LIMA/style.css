@@ -20,7 +20,7 @@
 
 #figureCabecalho {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -284,6 +284,7 @@ footer ul {
     left: 4%;
 }
 
+#tituloBusca,
 #itemBuscado,
 #quantidadeProdutosEncontrados {
     font-family: "Belleza", sans-serif;
@@ -313,7 +314,7 @@ h1 {
     gap: 100px;
     max-width: 2000px;
     grid-template-columns: repeat(4, 320px);
-    margin: 70px auto 0 auto;
+    margin: 85px auto;
     justify-content: center;
 }
 
@@ -344,20 +345,20 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: #131662;
+    padding: 10px;
 }
 
 .resultadosBuscaTexto:hover {
     font-weight: 400;
-    font-style: bold;
     font-size: 20px;
 }
 
-#botaoCarrinho {
+.botaoCarrinho {
     color: #131662;
     border: none;
     border-radius: 10px;
     padding: 8px;
-    margin-top: 8px;
+    margin-top: 15px;
     font-family: "Zain", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -367,7 +368,7 @@ h1 {
     background-color: #d6e4f8;
 }
 
-#botaoCarrinho:hover {
+.botaoCarrinho:hover {
     background-color: #131662;
     color: #ffffff;
     border-radius: 10px;
@@ -391,7 +392,6 @@ h1 {
 #tituloProdutoEspecifico {
     font-family: "Belleza", sans-serif;
     font-weight: 400;
-    font-style: bold;
     font-size: 45px;
     color: #131662;
     margin-top: 60px;
@@ -413,7 +413,6 @@ h1 {
 
 #precoProdutoEspecifico {
     font-weight: 500;
-    font-style: bold;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -484,6 +483,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding-top: 8px;
+    overflow: hidden;
 }
 
 #adicionarCarrinho {
@@ -549,7 +549,7 @@ ul {
     padding-top: 15px;
 }
 
-#blocoComentario {
+.blocoComentario {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,10 +560,10 @@ ul {
     display: flex;
 }
 
-#avaliacoesProduto {
+.avaliacoesProduto {
     border: 1px solid #e1e4e8;
     border-radius: 10px;
-    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    background-color: #eff2f6;
     width: 100em;
     display: flex;
     padding: 15px;
@@ -580,7 +580,6 @@ ul {
 
 .user {
     font-size: 30px;
-    font-style: bold;
     font-weight: 500;
     color: #131662;
 }
@@ -607,7 +606,7 @@ ul {
 #novoComentario {
     border: 1px solid #e1e4e8;
     border-radius: 10px;
-    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    background-color: #eff2f6;
     width: 50em;
     display: flex;
     align-items: center;
@@ -651,6 +650,14 @@ ul {
 
 /* Tela de carrinho */
 
+#tituloCarrinho {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #131662;
+    margin-left: 20px;
+}
+
 #carrinhoCompleto {
     display: flex;
     align-items: center;
@@ -659,7 +666,7 @@ ul {
 
 .produtoCarrinho {
     border: 1px solid #e4eefc;
-    background-color: #eff2f6; /* Alterar cor, contraste não suficiente*/
+    background-color: #eff2f6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-left: 35px;
@@ -721,13 +728,11 @@ ul {
 
 .categoriaResumoCompra {
     font-weight: 600;
-    font-style: bold;
 }
 
 #precoTotal {
     color: #0e53b5;
     font-weight: 600;
-    font-style: bold;
 }
 
 #botaoFinalizarCompra,
@@ -739,14 +744,15 @@ ul {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    outline: none;
     border: none;
+    text-decoration: none;
+    text-align: center;
 }
 
-#botaoFinalizarCompra:hover,
 #botaoContinuarComprando:hover {
     cursor: pointer;
-    background-color: #131662;
+    background-color: #a3c1dd;
+    color: #131662;
 }
 
 #botaoFinalizarCompra {
@@ -784,13 +790,17 @@ ul {
 
 /* Página de Login */
 
-#htmlLogin, #bodyLogin, #bodyCadastro, #htmlCadastro {
+#htmlLogin,
+#bodyLogin,
+#bodyCadastro,
+#htmlCadastro {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-#mainLogin, #mainCadastro {
+#mainLogin,
+#mainCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -799,9 +809,10 @@ ul {
     margin: 0;
     height: 100%;
     width: 100%;
-    }
+}
 
-#caixaLogin, #caixaCadastro {
+#caixaLogin,
+#caixaCadastro {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: white;
@@ -813,17 +824,19 @@ ul {
     align-items: center;
 }
 
-#loginTitulo, #cadastroTitulo {
+#loginTitulo,
+#cadastroTitulo {
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #131662;
-    align-items: center; 
+    align-items: center;
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-#formLogin, #formCadastro {
+#formLogin,
+#formCadastro {
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -832,14 +845,16 @@ ul {
     overflow: hidden;
 }
 
-.campoLogin, .campoCadastro {
+.campoLogin,
+.campoCadastro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin-bottom: 15px;
 }
 
-.labelLogin, .labelCadastro {
+.labelLogin,
+.labelCadastro {
     padding: 8px;
     font-family: "Zain", sans-serif;
     font-weight: 400;
@@ -847,7 +862,8 @@ ul {
     color: #131662;
 }
 
-.inputLogin, .inputCadastro {
+.inputLogin,
+.inputCadastro {
     padding: 22px;
     border-radius: 10px;
     width: 35em;
@@ -863,7 +879,8 @@ ul {
     color: #13166273;
 }
 
-#cadastreSe, #facaLogin {
+#cadastreSe,
+#facaLogin {
     display: flex;
     gap: 4px;
     justify-content: center;
@@ -879,7 +896,8 @@ ul {
     transform: scale(1.02);
 }
 
-#confirmacaoLogin, #confirmarCadastro {
+#confirmacaoLogin,
+#confirmarCadastro {
     padding: 20px;
     width: 50%;
     font-family: "Belleza", sans-serif;
@@ -888,7 +906,6 @@ ul {
     font-size: 22px;
     background: linear-gradient(to right, #0e53b5, #131662);
     color: white;
-    outline: none;
     border: none;
     border-radius: 10px;
     margin-top: 18px;
@@ -949,7 +966,7 @@ ul {
     text-align: center;
 }
 
-.cabecalhoFinalizarCompra h1{
+.cabecalhoFinalizarCompra h1 {
     background: linear-gradient(to right, #0e53b5, #131662);
     color: white;
     font-family: "Belleza", sans-serif;
@@ -959,7 +976,7 @@ ul {
     text-align: center;
 }
 
-.cabecalhoFinalizarCompra p{
+.cabecalhoFinalizarCompra p {
     background: linear-gradient(to right, #0e53b5, #131662);
     color: white;
     font-family: "Belleza", sans-serif;
@@ -967,26 +984,25 @@ ul {
     font-size: 24px;
     margin-bottom: 40px;
     text-align: center;
-
 }
 
- .passosFinalizarCompraCabecalho {
+.passosFinalizarCompraCabecalho {
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     background-color: #a6c9fe8b;
- }
+}
 
- .passo {
+.passo {
     display: block;
     justify-content: center;
     align-items: center;
     width: fit-content;
- }
+}
 
- .numeroPasso {
+.numeroPasso {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -998,9 +1014,9 @@ ul {
     font-weight: bold;
     color: #131662;
     font-size: 20px;
- }
+}
 
- .tituloPasso {
+.tituloPasso {
     font-size: 22px;
     color: #131662;
     font-family: "Zain", sans-serif;
@@ -1028,7 +1044,10 @@ ul {
     padding: 40px;
 }
 
-#tituloEndereco, #tituloPagamento, #tituloEntrega, #tituloConfirmacao{
+#tituloEndereco,
+#tituloPagamento,
+#tituloEntrega,
+#tituloConfirmacao {
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -1040,7 +1059,6 @@ ul {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .grupoFormulario label {
@@ -1057,7 +1075,12 @@ ul {
     border: 1px solid #131662;
 }
 
-#cep::placeholder, #rua::placeholder, #numero::placeholder, #complemento::placeholder, #bairro::placeholder, #cidade::placeholder {
+#cep::placeholder,
+#rua::placeholder,
+#numero::placeholder,
+#complemento::placeholder,
+#bairro::placeholder,
+#cidade::placeholder {
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -1088,7 +1111,10 @@ ul {
     border: none;
 }
 
-.botaoProximo, .botaoVoltar, .botaoConfirmar, .botaoPaginaInicial {
+.botaoProximo,
+.botaoVoltar,
+.botaoConfirmar,
+.botaoPaginaInicial {
     background-color: #131662;
     color: white;
     overflow: hidden;
@@ -1102,7 +1128,10 @@ ul {
     margin: 25px;
 }
 
-.botaoProximo:hover, .botaoVoltar:hover, .botaoConfirmar:hover, .botaoPaginaInicial:hover {
+.botaoProximo:hover,
+.botaoVoltar:hover,
+.botaoConfirmar:hover,
+.botaoPaginaInicial:hover {
     cursor: pointer;
     background-color: #a3c1dd;
     color: #131662;
@@ -1110,7 +1139,8 @@ ul {
 
 /*  Finalização de compra - Pagamento */
 
-.metodosPagamento, .opcoesEntrega {
+.metodosPagamento,
+.opcoesEntrega {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1118,7 +1148,8 @@ ul {
     border: none;
 }
 
-.metodoPagamento, .opcaoEntrega {
+.metodoPagamento,
+.opcaoEntrega {
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -1163,7 +1194,8 @@ ul {
 
 /* Sobre nós */
 
-#sobre, #entrega {
+#sobre,
+#entrega {
     display: flex;
     margin-top: 50px;
     align-items: center;
@@ -1185,7 +1217,6 @@ ul {
     color: #131662;
     margin-bottom: 10px;
     margin-left: 10px;
-
 }
 
 .textoSecao {
@@ -1203,10 +1234,9 @@ ul {
     font-weight: 300;
     max-width: 700px;
     color: #131662;
-    font-style: bold;
+    font-weight: bold;
     font-size: 30px;
     margin-left: 10px;
-
 }
 
 .imagemSobreNos img {
@@ -1216,9 +1246,202 @@ ul {
     align-items: flex-start;
 }
 
-#privacidade, #direitosCliente {
+#privacidade,
+#direitosCliente {
     display: flex;
     margin-top: 50px;
     align-items: center;
     justify-content: space-between;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#labelContato,
+#labelComentario {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #131662;
+    margin-left: 80px;
+}
+
+#contato #email {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e1e4e8;
+    background-color: #eff2f6;
+    width: 52em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #131662;
+}
+
+#contato button {
+    width: 30em;
+    margin-left: 30%;
+}
+
+/*  Tela ADM  */
+
+.mainAdm {
+    margin: 0;
+    padding: 0;
+}
+
+.tituloPainel {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-weight: 300;
+    font-size: 35px;
+    color: #131662;
+    text-align: center;
+}
+
+.adicionarProduto {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.adicionarProduto:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.painelGeral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumoCards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 5%;
+    gap: 30px;
+}
+
+.cardResumo {
+    padding: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0e53b5, #131662);
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.valorCard {
+    font-size: 25px;
+}
+
+.cabecalhoPainel {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tabela1Adm,
+#tabela2Adm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#tituloTabelaProdutos,
+#tituloTabelaContatos {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-weight: 300;
+    color: #131662;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tabelaProdutos,
+.tabelaContatos {
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #dddddd98;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.tabelaProdutos th,
+.tabelaContatos th {
+    padding: 10px;
+    color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.tabelaProdutos td,
+.tabelaContatos td {
+    padding: 10px;
+    color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabelaProdutos td button,
+.tabelaContatos td button {
+    padding: 10px;
+    color: #131662;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.botaoEditarTabelaProdutos,
+.botaoResponderTabelaContatos {
+    background-color: #131662;
+}
+
+.botaoExcluirTabelaProdutos,
+.botaoExcluirTabelaContatos {
+    background-color: rgba(255, 0, 0, 0.691);
+}
+
+.botaoVerTabelaContatos {
+    background-color: #0e53b5;
+    width: 110px;
+}
+
+.botaoEditarTabelaProdutos:hover,
+.botaoExcluirTabelaProdutos:hover,
+.botaoExcluirTabelaContatos:hover,
+.botaoResponderTabelaContatos:hover,
+.botaoVerTabelaContatos:hover {
+    background-color: #a3c1dd;
+    color: #131662;
+    cursor: pointer;
 }

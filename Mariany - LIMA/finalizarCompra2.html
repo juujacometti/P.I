@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zirco | Finalizar compra 2</title>
+        <meta name=description content = "finalizarCompra2"/>
+        <title>Zirco | Finalizar Compra 2</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images/logo.png" type="image/x-icon" />
     </head>
@@ -11,30 +12,18 @@
         <header>
             <section id="cabecalho">
                 <figure id="figureCabecalho">
-                    <a id="logo" href="index.html"
-                        ><img
-                            src="images/logo.png"
-                            alt="Logo Zirco"
-                            height="70px"
-                    /></a>
-                    <a id="busca" href="busca.html"
-                        ><img
-                            src="images/busca.png"
-                            alt="Ícone de busca."
-                            height="35px"
-                    /></a>
-                    <a id="perfil" href=""
-                        ><img
-                            src="images/perfil.png"
-                            alt="Ícone de perfil do usuário."
-                            height="35px"
-                    /></a>
-                    <a id="carrinho" href="carrinho.html"
-                        ><img
-                            src="images/carrinho.png"
-                            alt="Ícone de carrinho."
-                            height="35px"
-                    /></a>
+                    <a id="logo" href="index.html">
+                        <img src="images/logo.png" alt="Logo Zirco" height="70px"/>
+                    </a>
+                    <a id="busca" href="busca.html">
+                        <img src="images/busca.png" alt="Ícone de busca" height="35px"/>
+                    </a>
+                    <a id="perfil" href="#">
+                        <img src="images/perfil.png" alt="Ícone de perfil do usuário" height="35px"/>
+                    </a>
+                    <a id="carrinho" href="carrinho.html">
+                        <img src="images/carrinho.png" alt="Ícone de carrinho" height="35px"/>
+                    </a>
                 </figure>
             </section>
 
@@ -49,133 +38,115 @@
         </header>
 
         <main class="processoCompra">
-        <div class="cabecalhoFinalizarCompra">
-            <h1>Finalização da Compra</h1>
-            <p>Confirme seus dados e finalize seu pedido</p>
-        </div>
-        
-        <section class="passosFinalizarCompraCabecalho">
-            <div class="passo">
-                <div class="numeroPasso">1</div>
-                <div class="tituloPasso">Endereço</div>
+            <div class="cabecalhoFinalizarCompra">
+                <h1>Finalização da Compra</h1>
+                <p>Confirme seus dados e finalize seu pedido</p>
             </div>
-            <div class="passo" id="passo2">
-                <div class="passoAtivo">2</div>
-                <div class="tituloPasso">Pagamento</div>
-            </div>
-            <div class="passo" id="passo3">
-                <div class="numeroPasso">3</div>
-                <div class="tituloPasso">Entrega</div>
-            </div>
-            <div class="passo" id="passo4">
-                <div class="numeroPasso">4</div>
-                <div class="tituloPasso">Finalizar</div>
-            </div>
-        </section>
-        
-         <article class="telaAtiva" >
-                    <div class="cabecalhoSecao">
-                        <h2 id="tituloPagamento">🤑 Método de Pagamento</h2>
-                    </div>
-                        <fieldset class="metodosPagamento">
-                            <label class="metodoPagamento">
-                                <input type="radio" name="pagamento" value="credito" required>
-                                Cartão de Crédito 💳 
-                            </label>
-                            <label class="metodoPagamento">
-                                <input type="radio" name="pagamento" value="boleto">
-                                Boleto Bancário 💵
-                            </label>
-                            <label class="metodoPagamento">
-                                <input type="radio" name="pagamento" value="pix">
-                                PIX 📱
-                            </label>
-                            <label class="metodoPagamento">
-                                <input type="radio" name="pagamento" value="debito">
-                                Cartão de Débito 💳 
-                            </label>
-                        </fieldset>
-            </div>
-            
-            <section class="botaoAcao">
-                <a class="botaoVoltar" href="finalizarCompra1.html">Voltar</a>
-                <a class="botaoProximo" href="finalizarCompra3.html">Próximo</a>
+
+            <section class="passosFinalizarCompraCabecalho">
+                <div class="passo">
+                    <div class="numeroPasso">1</div>
+                    <div class="tituloPasso">Endereço</div>
+                </div>
+                <div class="passo" id="passo2">
+                    <div class="passoAtivo">2</div>
+                    <div class="tituloPasso">Pagamento</div>
+                </div>
+                <div class="passo" id="passo3">
+                    <div class="numeroPasso">3</div>
+                    <div class="tituloPasso">Entrega</div>
+                </div>
+                <div class="passo" id="passo4">
+                    <div class="numeroPasso">4</div>
+                    <div class="tituloPasso">Finalizar</div>
+                </div>
             </section>
-        </article>
+
+            <article class="telaAtiva">
+                <div class="cabecalhoSecao">
+                    <h2 id="tituloPagamento">🤑 Método de Pagamento</h2>
+                </div>
+                    <fieldset class="metodosPagamento">
+                        <label class="metodoPagamento">
+                            <input type="radio" name="pagamento" value="credito" required/>
+                            Cartão de Crédito 💳
+                        </label>
+                        <label class="metodoPagamento">
+                            <input type="radio" name="pagamento" value="boleto"/>
+                            Boleto Bancário 💵
+                        </label>
+                        <label class="metodoPagamento">
+                            <input type="radio" name="pagamento" value="pix" />
+                            PIX 📱
+                        </label>
+                        <label class="metodoPagamento">
+                            <input type="radio" name="pagamento" value="debito"/>
+                            Cartão de Débito 💳
+                        </label>
+                    </fieldset>
+                
+
+                <section class="botaoAcao">
+                    <a class="botaoVoltar" href="finalizarCompra1.html">Voltar</a>
+                    <a class="botaoProximo" href="finalizarCompra3.html">Próximo</a>
+                </section>
+            </article>
         </main>
 
-
         <footer>
-        <section id="formasPagamento">
-            <h3>FORMAS DE PAGAMENTO</h3>
-            <ul>
-                <li>
-                    <img
-                        src="images/Rodape/icon_cartao.png"
-                        alt="Ícone de cartão de crédito e débito"
-                        height="25px"
-                    />Débito / Crédito
-                </li>
-                <li>
-                    <img
-                        src="images/Rodape/icon_pix.png"
-                        alt="Ícone PIX"
-                        height="25px"
-                    />PIX
-                </li>
-                <li>
-                    <img
-                        src="images/Rodape/icon_boleto.png"
-                        alt="Ícone de boleto bancário"
-                        height="25px"
-                    />Boleto
-                </li>
-            </ul>
-        </section>
-        <section id="sobreNos">
-            <h3>SOBRE NÓS</h3>
-            <ul>
-                <li><a href="">Conheça a Zirco</a></li>
-                <li><a href="">Políticas de privacidade</a></li>
-                <li><a href="">Políticas de entrega</a></li>
-                <li><a href="">Direitos do consumidor</a></li>
-            </ul>
-        </section>
-        <section id="sac">
-            <h3>SAC</h3>
-            <ul>
-                <li>(19) 12345 - 6789</li>
-                <li>(11) 98765 - 4321</li>
-            </ul>
-        </section>
-        <section id="redesSociais">
-            <h3>REDES SOCIAIS</h3>
-            <ul>
-                <li>
-                    <img
-                        src="./images/Rodape/icon_facebook.png"
-                        alt="Logo Facebook"
-                        height="28px"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="images/Rodape/icon_instagram.png"
-                        alt="Logo instagram"
-                        height="28px"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="images/Rodape/icon_whatsapp.png"
-                        alt="Logo WhatsApp"
-                        height="28px"
-                    />
-                </li>
-            </ul>
-        </section>
+            <section id="formasPagamento">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <ul>
+                    <li>
+                        <img src="images/Rodape/icon_cartao.png" alt="Ícone de cartão de crédito e débito" height="25px"/>
+                        Débito / Crédito
+                    </li>
+                    <li>
+                        <img src="images/Rodape/icon_pix.png" alt="Ícone PIX" height="25px"/>
+                        PIX
+                    </li>
+                    <li>
+                        <img src="images/Rodape/icon_boleto.png" alt="Ícone de boleto bancário" height="25px"/>
+                        Boleto
+                    </li>
+                </ul>
+            </section>
+            <section id="sobreNos">
+                <h3>SOBRE NÓS</h3>
+                <ul>
+                    <li>
+                        <a href="sobreNos.html#conhecaZirco">Conheça a Zirco</a>
+                    </li>
+                    <li><a href="sobreNos.html">Políticas de privacidade</a></li>
+                    <li><a href="sobreNos.html">Políticas de entrega</a></li>
+                    <li><a href="sobreNos.html">Direitos do consumidor</a></li>
+                </ul>
+            </section>
+            <section id="sac">
+                <h3>SAC</h3>
+                <ul>
+                    <li>(19) 12345 - 6789</li>
+                    <li>(11) 98765 - 4321</li>
+                </ul>
+            </section>
+            <section id="redesSociais">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li>
+                        <img src="./images/Rodape/icon_facebook.png" alt="Logo Facebook" height="28px"/>
+                    </li>
+                    <li>
+                        <img src="images/Rodape/icon_instagram.png" alt="Logo instagram" height="28px"/>
+                    </li>
+                    <li>
+                        <img src="images/Rodape/icon_whatsapp.png" alt="Logo WhatsApp" height="28px"/>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="direitos">
-            <p>ZIRCO | Todos os direitos reservados.</p>
-        </section>
-    </footer>
+            <section id="direitos">
+                <p>ZIRCO | Todos os direitos reservados.</p>
+            </section>
+        </footer>
+    </body>
+</html>

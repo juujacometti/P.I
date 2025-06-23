@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zirco | ADM</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <section id="cabecalho">
+                <figure id="figureCabecalho">
+                    <a id="logo" href="index.html">
+                        <img
+                            src="images/logo.png"
+                            alt="Logo Zirco"
+                            height="70px"
+                        />
+                    </a>
+                </figure>
+            </section>
+        </header>
+        <div class="painelGeral">
+            <main class="mainAdm">
+
+                <div class="gerenciamentoPainel">
+            <section class="cabecalhoPainel">
+                <h2 class="tituloPainel">Gerenciamento de Produtos</h2>
+                <button class="adicionarProduto"></i> ADICIONAR PRODUTO</button>
+            </section>
+            <section class="resumoCards">
+                <article class="cardResumo">
+                    <h3 class="tituloCard">Total de Produtos</h3>
+                    <p class="valorCard">42</p>
+                </article>
+
+                <article class="cardResumo">
+                    <h3 class="tituloCard">Produtos em Estoque</h3>
+                    <p class="valorCard">35</p>
+                </article>
+
+                <article class="cardResumo">
+                    <h3 class="tituloCard">Produtos Esgotados</h3>
+                    <p class="valorCard">7</p>
+                </article>
+
+                <article class="cardResumo">
+                    <h3 class="tituloCard">Solicitações de Contato</h3>
+                    <p class="valorCard">5</p>
+                </article>
+            </section>
+            </div>
+            </div>
+
+            <section id="tabela1Adm">
+                <h3 id="tituloTabelaProdutos">Tabela de produtos</h3>
+                <table class="tabelaProdutos">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Status</th>
+            <th>Estoque</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>Anel Ouro 18k com Zircônia</td>
+            <td>R$ 1.200,00</td>
+            <td>Disponível</td>
+            <td>12</td>
+            <td><button class="botaoEditarTabelaProdutos">Editar</button> <button class="botaoExcluirTabelaProdutos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Colar Prata 925 Banhado a Ouro</td>
+            <td>R$ 350,00</td>
+            <td>Disponível</td>
+            <td>25</td>
+            <td><button class="botaoEditarTabelaProdutos">Editar</button> <button class="botaoExcluirTabelaProdutos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Brinco de Argola com Cristal</td>
+            <td>R$ 480,00</td>
+            <td>Esgotado</td>
+            <td>0</td>
+            <td><button class="botaoEditarTabelaProdutos">Editar</button> <button class="botaoExcluirTabelaProdutos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Pulseira de Pérolas Naturais</td>
+            <td>R$ 600,00</td>
+            <td>Disponível</td>
+            <td>8</td>
+            <td><button class="botaoEditarTabelaProdutos">Editar</button> <button class="botaoExcluirTabelaProdutos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Anel Solitário Diamante</td>
+            <td>R$ 3.500,00</td>
+            <td>Disponível</td>
+            <td>5</td>
+            <td><button class="botaoEditarTabelaProdutos">Editar</button> <button class="botaoExcluirTabelaProdutos">Excluir</button></td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+
+
+    <section id="tabela2Adm">
+        <h3 id="tituloTabelaContatos">Feedbacks e Contatos</h3>
+        <table class="tabelaContatos">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Email</th>
+            <th>Mensagem</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <td>Ana Paula</td>
+            <td>ana.paula@email.com</td>
+            <td>Gostaria de saber o prazo de entrega.</td>
+            <td>22/06/2025</td>
+            <td>Não respondida</td>
+            <td><button class="botaoResponderTabelaContatos">Responder</button> <button class="botaoExcluirTabelaContatos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>joao.silva@email.com</td>
+            <td>Produto chegou danificado.</td>
+            <td>21/06/2025</td>
+            <td>Em análise</td>
+            <td><button class="botaoResponderTabelaContatos">Responder</button> <button class="botaoExcluirTabelaContatos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>Mariana Costa</td>
+            <td>mariana.costa@email.com</td>
+            <td>Fazem personalização em joias?</td>
+            <td>20/06/2025</td>
+            <td>Respondida</td>
+            <td><button class="botaoVerTabelaContatos">Ver</button> <button class="botaoExcluirTabelaContatos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>Lucas Rocha</td>
+            <td>lucas.rocha@email.com</td>
+            <td>Quero cancelar um pedido.</td>
+            <td>18/06/2025</td>
+            <td>Resolvido</td>
+            <td><button class="botaoVerTabelaContatos">Ver</button> <button class="botaoExcluirTabelaContatos">Excluir</button></td>
+        </tr>
+        <tr>
+            <td>Beatriz Lima</td>
+            <td>beatriz.lima@email.com</td>
+            <td>Qual o tamanho do anel modelo Drops?</td>
+            <td>17/06/2025</td>
+            <td>Não respondida</td>
+            <td><button class="botaoResponderTabelaContatos">Responder</button> <button class="botaoExcluirTabelaContatos">Excluir</button></td>
+        </tr>
+    </tbody>
+</table>
+    </section>
+    
+
+            </main>
+            
+    </body>
+</html>
